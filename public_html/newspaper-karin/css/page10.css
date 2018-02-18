@@ -1,0 +1,152 @@
+*{
+	margin:0 auto;
+	padding:0;
+	font-family:"opensans";
+}
+.clear{
+    clear:both;
+}
+/****header****/
+header{
+    width:97%;
+    margin: 1.5%;
+    padding-right: 14px;
+    padding-left: 14px;
+    margin-bottom: 35px;
+    margin-top: 40px;
+}
+#headerContainer{
+    font-weight: 500;
+    font-size: 16px;
+}
+#circle{
+    font-family: atlas;
+    float: right;
+    height: 35px;
+    width: 35px;
+    border-radius: 17px;
+    background-color: #000000;
+    font-size: 26px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-right: 0px;
+    line-height: 31px;
+}
+#dateContainer{
+    float: right;
+    line-height: 35px;
+    margin-right: 15px;
+}
+#smallLogoImg{
+    margin-top: -2px;
+    height: 35px;
+}
+#currDayHebrewName{
+    color:#EE422F;
+    font-family: opensans-bold;
+}
+#hebrewDate,#foreignDate{
+    font-family: opensans-bold;
+}
+.wrapper {
+    margin: 2%;
+    background-color: #ffffff;
+    /* height: 635px;*/
+    direction: rtl;
+    border: #000000 1px solid;
+}
+
+/********first article **************/
+#first-article {
+    width: 97%;
+    margin: 1.5%;
+    padding-right: 14px;
+    padding-left: 14px;
+}
+.titles-and-img-container{
+
+}
+
+.titles-and-img-container .main-title {
+    font-family: "atlas";
+    font-weight: 700;
+    margin-top: 1px;
+    background-color:#EE422F;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.only-titles-container{
+    float: left;
+    width:65%;
+}
+#first-article .content-img{
+    float: right;
+    width:31%;
+    height: 172px;
+    border-radius: 15px;
+}
+#first-article .sub-title{
+    color:#EE422F;
+    margin-top: 12px;
+    padding-right: 3px;
+    padding-left:3px ;
+}
+#first-article .content{
+    column-count: 3;
+    column-gap: 30px;
+    text-align: justify;
+    padding-right: 8px;
+    margin-top:10px;
+}
+#first-article .content p{
+    text-indent: 15px;
+    text-align: justify;
+}
+.writer-and-photographer {
+    margin-top: 10px;
+    font-family: opensans-bold;
+    padding-right: 8px;
+    color: #4E4E4E;
+}
+/*******second container***********/
+#secondAndThirdArticleContainer{
+    width: 92%;
+    margin: 1.5%;
+    padding-right: 14px;
+    padding-left: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.small-writer{
+    margin-top: 10px;
+    font-family: opensans-bold;
+    padding-right: 8px;
+    color: #4E4E4E;
+    margin-left: 0px;
+    direction: ltr;
+}
+.small-main-title{
+    background-color:#B3B3B3;
+    color: #000000;
+    padding-right: 4px;
+    padding-left: 4px;
+    display: inline-block;
+    width: 287px;
+}
+.small-content{
+    column-count: 2;
+    column-gap: 30px;
+    text-align: justify;
+    margin-top:10px;
+}
+.yome-border:before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    right: -9px;
+    bottom: -9px;
+    background-image: linear-gradient(to right, #EE422F 3.5%, #FFFFFF 3.6%, #FFFFFF 96.4%, #53C4F1 96.5%);
+    z-index: 0;
+    border-radius: 5px;
+}

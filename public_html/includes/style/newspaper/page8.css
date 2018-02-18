@@ -1,0 +1,15 @@
+.page8 {
+    border: 0 solid red;
+}
+
+.page8 .articles-container {
+    height:100%;
+}
+.page8 .articles-container .commercial-container {
+    height: 100%;
+}
+.page8 .articles-container .commercial-container img {
+    width: 100%;
+    height:100%;
+}
+

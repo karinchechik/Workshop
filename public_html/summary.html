@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Yome</title>
+
+		<link rel="shortcut icon" href="../includes/images/logoYome.png"/>
+		
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="includes/style/font.css" rel="stylesheet" type="text/css">
+		<link href="includes/style/visitor/modal.css" rel="stylesheet" type="text/css">
+		<link href="includes/style/visitor/index.css" rel="stylesheet" type="text/css">
+		<link href="includes/style/visitor/summary.css" rel="stylesheet" type="text/css">
+		
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+		<script src="http://underscorejs.org/underscore-min.js"></script>
+		
+		<!-- Bootstrap Core JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		
+		<!--JS--->
+		<script type="text/javascript" src="includes/js/libs/jquery.cookie.js"></script>
+		<script type="text/javascript" src="includes/js/libs/gematria.js"></script>
+		<script type="text/javascript" src="includes/js/utils/dateUtils.js"></script>
+		<script type="text/javascript" src="includes/js/utils/dateHebrewUtils.js"></script>
+		<script type="text/javascript" src="includes/js/utils/categoriesEnum.js"></script>
+		<script type="text/javascript" src="includes/js/pages/visitor/summary.js"></script>
+	</head>
+	
+	<body>
+<!--		<section id="miniPaper">
+			<div id="weatherContainer">
+				<div id="zefatApiWeather">
+					<div class="city-name-api-weather">
+						צפת
+					</div>
+					<span class="city-temp-api-weather"></span>
+					<img class="city-icon-api-weather" src="">
+				</div>
+				<div id="haifaApiWeather">
+					<div class="city-name-api-weather">
+						חיפה
+					</div>
+					<span class="city-temp-api-weather"></span>
+					<img class="city-icon-api-weather" src="">
+				</div>
+				<div id="telAvivApiWeather">
+					<div class="city-name-api-weather">
+						תל אביב
+					</div>
+					<span class="city-temp-api-weather"></span>
+					<img class="city-icon-api-weather" src="">
+				</div>
+				<div id="jerusalemApiWeather">
+					<div class="city-name-api-weather">
+						ירושלים
+					</div>
+					<span class="city-temp-api-weather"></span>
+					<img class="city-icon-api-weather" src="">
+				</div>
+				<div id="beershebaApiWeather">
+					<div class="city-name-api-weather">
+						באר שבע
+					</div>
+					<span class="city-temp-api-weather"></span>
+					<img class="city-icon-api-weather" src="">
+				</div>
+				<div id="eilatApiWeather">
+					<div class="city-name-api-weather">
+						אילת
+					</div>
+					<span class="city-temp-api-weather"></span>
+					<img class="city-icon-api-weather" src="">
+				</div>
+			</div>
+			<img id="logoImg" src="includes/images/summary-logo.png">
+
+			<div class="small-story">
+				<h3 class="small-main-title">blalal</h3>
+				<h1 class="small-sub-title" ></h1>
+				<p class="writer-and-photographer" ></p>
+				<p class="small-content"></p>
+			</div>
+			<div id="dateContainer">
+				<p id="currDayHebrewName"></p>
+				<section id="hebrewAndForeignContainer">
+					<p id="hebrewMonthDate">
+						<span id="hebrewDayDate"> כ"ב </span>
+						<span id="hebrewMonthYearDate">שבט תשע"ו</span>
+					</p>
+					<p id="foreignDate">
+						<span id="day"></span>
+						<span id="month"></span>
+						<span id="year"></span>
+					</p>
+					<div class="clear"></div>
+				</section>
+			</div>
+			<div id="mainImg"></div>
+			<div class="small-story">
+				<h3 class="small-main-title">blalal</h3>
+				<h1 class="small-sub-title" ></h1>
+				<p class="writer-and-photographer" ></p>
+				<p class="small-content"></p>
+			</div>
+			<div class="small-story">
+				<h3 class="small-main-title">blalal</h3>
+				<h1 class="small-sub-title" ></h1>
+				<p class="writer-and-photographer" ></p>
+				<p class="small-content"></p>
+			</div>
+			<div class="clear"></div>
+		</section>
+		-->
+
+		<section id="summaryChoices">
+			<div id="title">
+				<span class="yome-border">
+					ה-YOME שלך
+				</span>
+			</div>
+			<div id="userFinalChoices">
+				<article class="user-final-choices-article" id="firstUserArticleChoices">
+					<p id="bitahon">
+						<span class="category-name">ביטחון -</span>
+						<span class="category-choice-number"></span>
+					</p>
+					<p id="yediot">
+						<span class="category-name">ידיעות מהעולם -</span>
+						<span class="category-choice-number"></span>
+					</p>
+					<p id="mishpatAndPlilim">
+						<span class="category-name">משפט ופלילים -</span>
+						<span class="category-choice-number"></span>
+					</p>
+					<p id="calcala">
+						<span class="category-name">כלכלה וצרכנות -</span>
+						<span class="category-choice-number"></span>
+					</p>
+				</article>
+				<article class="user-final-choices-article" id="secondUserArticleChoices">
+					<p id="omanot" >
+						<span class="category-name">אומנות ותרבות -</span>
+						<span class="category-choice-number"></span>
+					</p>
+					<p id="madaAndTec">
+						<span class="category-name">מדע וטכנולוגיה -</span>
+						<span class="category-choice-number"></span>
+					</p>
+					<p id="music">
+						<span class="category-name">מוזיקה -</span>
+						<span class="category-choice-number"></span>
+					</p>
+					<p id="briot">
+						<span class="category-name">בריאות וטבע -</span>
+						<span class="category-choice-number"></span>
+					</p>
+				</article>
+				<article class="user-final-choices-article" id="thirdUserArticleChoices">
+					<p id="politics">
+						<span class="category-name">פוליטיקה -</span>
+						<span class="category-choice-number"></span>
+					</p>
+					<p id="hinoh">
+						<span class="category-name">חינוך וחברה -</span>
+						<span class="category-choice-number"></span>
+					</p>
+					<p id="sport">
+						<span class="category-name">ספורט -</span>
+						<span class="category-choice-number"></span>
+					</p>
+					<p id="televistion">
+						<span class="category-name">טלוויזיה ובידור -</span>
+						<span class="category-choice-number"></span>
+					</p>
+				</article>
+				<article class="user-final-choices-article" id="fourthUserArticleChoices">	
+					<p id="tahbora">
+						<span class="category-name">תחבורה -</span>
+						<span class="category-choice-number"></span>
+					</p>
+					<p id="dat">
+						<span class="category-name">דת -</span>
+						<span class="category-choice-number"></span>
+					</p>
+					<p id="ofna">
+						<span class="category-name">אופנה -</span>
+						<span class="category-choice-number"></span>
+					</p>
+					<p id="taiarot">
+						<span class="category-name">תיירות -</span>
+						<span class="category-choice-number"></span>
+					</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+			<div id="morePagesUserChoices">
+				<div id="politicsUserOpinion">דעה פוליטית:
+					<span class="category-choice-more"> </span>
+					</div>
+				<div id="moreOptions">עמודים נוספים:
+				</div>
+			</div>
+			<div class="summary-buttons-container">
+				<button type="button" class="summary-buttons" id="printButton">הדפס בלבד</button>
+				<button type="button" class="summary-buttons" id="printAndSaveButton"  data-toggle="modal" data-target="#userDetailsModal">שמור והדפס</button>
+				<button type="button" class="summary-buttons" id="wachButton"><a href="newspaper-tomer/newspaper.html?rightPage=2&leftPage=3">לצפייה ב-YO[]ME שלי</a></button>
+			</div>
+
+		</section>
+
+		<!-- Modal add user name and phone number -->		
+		<div class="modal fade" id="userDetailsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="userDetailsModalLabel">שמור והדפס</h4>
+					</div>
+					<div class="modal-body">
+							<label id="idNumberLable" class="user-details-modal-lable id-number-class">
+								<span class="title-lable">ת"ז:</span>
+								<input required  type="text" id="idNumberInput" maxlength="9" name="id" value=""/>
+							</label>
+							<label id="userNameLable" class="user-details-modal-lable">
+								<span class="title-lable">שם מלא:</span>
+								<input type="text" id="userNameInput" name="fullName" value=""/>
+							</label>
+							<label id="phoneLable" class="user-details-modal-lable">
+								<span class="title-lable">נייד:</span>
+								<input type="tel" id="phoneNumberInput" maxlength="10" name="phoneNumber" value=""/>
+							</label>
+                            <input type="submit" class="saveUsersDetailsButton1" id="saveButton" value="שמור הגדרות "/>
+							<div class="modal-footer">
+								<input type="button" data-dismiss="modal" class="saveUsersDetailsButton" value="סגור"/>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

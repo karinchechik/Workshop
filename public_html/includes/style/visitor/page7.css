@@ -1,0 +1,85 @@
+*{
+	margin:0 auto;
+	padding:0;
+	font-family:"Atlas";
+}
+
+.wrapper {
+    margin: 2%;
+    background-color: #ffffff;
+    height: 900px;
+    direction: rtl;
+    border: #000000 1px solid;
+}
+
+.clear{
+    clear:both;
+}
+/**right side**/
+#rightSideContainer{
+    float: right;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    width:45.75%;
+    height: 100%;
+}
+#second-article {
+    background-color: yellow;
+    margin-bottom: 1.5%;
+    height: 70%;
+    padding-right: 14px;
+    padding-left: 14px;
+}
+.big-commrcial {
+    height: 28.2%;
+    margin-left: 1.5%;
+    margin-top: 1.5%;
+    background-color: blue;
+    display: block;
+    margin-bottom: 1.5%;
+}
+
+.big-commercial2{
+    display:none;
+}
+
+/***left-side***/
+#leftSideContainer{
+    float:left;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    width:47.75%;
+    height: 100%;
+}
+#jobs {
+    height: 45.2%;
+    background-color: green;
+    margin-top: 1.5%;
+    padding-right: 14px;
+    padding-left: 14px;
+}
+#third-article {
+    height: 45.2%;
+    background-color: green;
+    margin-bottom: 1.5%;
+    padding-right: 14px;
+    padding-left: 14px;
+}
+
+.jobs-title, .grief-title{
+	text-align:center;
+	font-weight:bold;
+}
+.job-section, .grief-section{
+	border-top:#ffffff 1px solid;
+	border-bottom:#ffffff 1px solid;
+	margin-top:5px;
+	margin-right:5px;
+	margin-left:5px;
+}
+
+.jobs-sub-title, .jobs-content, .grief-sub-title, .grief-content{
+	direction:rtl;
+}
+
+

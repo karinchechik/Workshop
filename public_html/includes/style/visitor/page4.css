@@ -1,0 +1,87 @@
+*{
+	margin:0 auto;
+	padding:0;
+	font-family: "Atlas";
+}
+.clear{
+    clear:both;
+}
+.wrapper {
+    margin: 2%;
+    background-color: #ffffff;
+    direction: rtl;
+    border: #000000 1px solid;
+    height: 1000px;
+}
+
+#first-article {
+    width: 97%;
+    height: 52.7%;
+    margin: 1.5%;
+    display: block;
+    padding-right: 14px;
+    padding-left: 14px;
+}
+.main-title {
+    background-color:#53C4F1 ;
+    display: inline-block;
+}
+.sub-title{
+    color:#53C4F1;
+}
+#first-article .content{
+    column-count: 4;
+    column-gap: 30px;
+}
+.content p{
+    text-indent: 15px;
+    text-align: justify;
+}
+#second-article {
+    float: right;
+    width: 60%;
+    margin-bottom: 1.5%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    height: 37.9%;
+    padding-right: 14px;
+    padding-left: 14px;
+}
+.med-main-title{
+    background-color:#B3B3B3;
+    display: inline-block;
+}
+.med-sub-title{
+    color:#B3B3B3;
+}
+.yome-border:before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    right: -9px;
+    bottom: -9px;
+    background-image: linear-gradient(to right, #EE422F 3.5%, #FFFFFF 3.6%, #FFFFFF 96.4%, #53C4F1 96.5%);
+    z-index: 0;
+    border-radius: 5px;
+}
+#third-article-container{
+    float: left;
+    width: 35%;
+    height: 37.9%;
+    margin-bottom: 1.5%;
+    margin-left: 1.5%;
+    background-color: #FFFFFF;
+    display: block;
+    position: relative;
+}
+#third-article {
+    position: relative;
+    background-color: #FFFFFF;
+    z-index: 2;
+    border-radius: 3px;
+    padding-right: 14px;
+    padding-left: 14px;
+}
+
+

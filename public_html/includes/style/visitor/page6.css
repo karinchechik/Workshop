@@ -1,0 +1,83 @@
+*{
+	margin:0 auto;
+	padding:0;
+	font-family:"Atlas";
+}
+.clear{
+    clear:both;
+}
+.wrapper {
+    margin: 2%;
+    background-color: #ffffff;
+    direction: rtl;
+    border: #000000 1px solid;
+}
+#left-side-container{
+    float:left;
+    width:65%;
+    margin: 1.5%;
+}
+#first-article {
+    height: 45.2%;
+    padding-right: 14px;
+    padding-left: 14px;
+}
+#first-article .content{
+    column-count: 3;
+}
+.main-title {
+    background-color:#53C4F1 ;
+    display: inline-block;
+}
+.sub-title{
+    color:#53C4F1;
+}
+.big-commercial {
+    float: left;
+    width:97%;
+   /* width: 47.75%;*/
+    /*height: 45.2%;*/
+    height: 200px;
+    margin-left: 1.5%;
+    margin-top: 1.5%;
+    margin-right: 1.5%;
+    margin-bottom: 1.5%;
+    background-color: blue;
+    display: block;
+}
+/***right side**/
+#small-articles-container{
+    float:right;
+    width:30%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-right: 1.5%;
+    position: relative;
+    display: block;
+    background-color: #FFFFFF;
+}
+#second-article, #third-article, #four-article {
+    padding-right: 14px;
+    padding-left: 14px;
+    position: relative;
+    background-color: #FFFFFF;
+    z-index: 2;
+    border-radius: 3px;
+}
+
+.small-main-title{
+    display: inline-block;
+    background-color:#B3B3B3 ;
+}
+
+.yome-border:before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    right: -9px;
+    bottom: -9px;
+    background-image: linear-gradient(to right, #EE422F 3.5%, #FFFFFF 3.6%, #FFFFFF 96.4%, #53C4F1 96.5%);
+    z-index: 0;
+    border-radius: 5px;
+}

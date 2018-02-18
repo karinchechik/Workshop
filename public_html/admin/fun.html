@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>yome</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="../includes/ckeditor/ckeditor.js"></script>
+		<script src="../includes/js/pages/admin/fileImg.js"></script>
+		<link rel="shortcut icon" href="../includes/images/logoYome.png"/>
+		<link rel="stylesheet" type="text/css" href="../includes/style/admin/style.css">
+	</head>
+	<body>
+		<header>
+		</header>
+		<main>
+			<img class="slogo" src="../includes/images/yome-menu-slogo.png">
+			<h1 class="main-con-title"><span class="end-sign">[</span> יצירת עמוד פנאי <span class="start-sign">]</span></h1>
+			<form id="content-form" action="funPosted.php" method="post" autocomplete="on" enctype="multipart/form-data">
+			<!--	<br><label class="con-title">כותב <input class="text-box form-control" type="text" name="writer_name" value=" " maxlength="100"></label>  -->
+				<br><br><label class="con-title">תאריך <input class="text-box form-control" type="date" name="date"></label>
+				<br><label class="con-title">כותרת <input class="text-box form-control" type="text" name="main_title" value=" " maxlength="50"></label>
+				<br><label class="con-title">העלאת קובץ </label><br>
+		            <div class="input-group image-preview">
+		                <input id="input-style" type="text" class="form-control image-preview-filename" disabled="disabled" name="image">
+		                <span class="input-group-btn">
+		                    <!-- image-preview-clear button -->
+		                    <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
+		                        <span class="glyphicon glyphicon-remove"></span> Clear
+		                    </button>
+		                    <!-- image-preview-input -->
+		                    <div id="button-style" class="btn btn-default image-preview-input">
+		                        <span class="glyphicon glyphicon-folder-open"></span>
+		                        <span class="image-preview-input-title">Browse</span>
+		                        <input type="file" accept="image/png, image/jpeg, image/gif" name="image"/>
+		                    </div>
+		                </span>
+		            </div>
+
+				<br><br><input class="btn btn-default btn-lg sub-button" type="submit" value=" שלח ">
+			</form>
+		</main>
+	</body>
+</html>

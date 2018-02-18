@@ -1,0 +1,153 @@
+*{
+	margin:0 auto;
+	padding:0;
+    font-family:"opensans";
+}
+.clear{
+    clear:both;
+}
+.wrapper {
+    margin: 2%;
+    background-color: #ffffff;
+    direction: rtl;
+    border: #000000 1px solid;
+}
+/**********header***********/
+header{
+    width:97%;
+    margin: 1.5%;
+    padding-right: 14px;
+    padding-left: 14px;
+    margin-top: 40px;
+}
+#headerContainer{
+    font-weight: 500;
+    font-size: 16px;
+    float: left;
+}
+#circle{
+    font-family: atlas;
+    float: right;
+    height: 35px;
+    width: 35px;
+    border-radius: 17px;
+    background-color: #000000;
+    font-size: 26px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-right: 0px;
+    line-height: 31px;
+}
+#dateContainer{
+    float: right;
+    line-height: 35px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+#smallLogoImg{
+    margin-top: -2px;
+    height: 35px;
+}
+#currDayHebrewName{
+    color:#EE422F;
+    font-family: opensans-bold;
+}
+#hebrewDate,#foreignDate{
+    font-family: opensans-bold;
+}
+/******genarite********/
+h1,h3{
+    margin-top: 0px;
+}
+.main-title {
+    background-color:#EE422F ;
+    display: inline-block;
+    font-family:"atlas";
+    padding-right: 8px;
+}
+.sub-title{
+    color:#EE422F;
+}
+.small-main-title{
+    font-family:"atlas";
+}
+.writer-and-photographer{
+    direction: ltr;
+    font-family: opensans-bold;
+}
+.small-content{
+    column-gap: 30px;
+    text-align: justify;
+    text-indent: 15px;
+    background-size:cover ;
+}
+.content-img{
+    /*width:490px;*/
+    width:100%;
+    height: 327px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+/*****first article*********/
+#first-article {
+    float: right;
+    width: 70%;
+    height: 94%;
+    margin-right: 1.5%;
+    margin-top: 2.5%;
+    margin-bottom: 1.5%;
+    display: block;
+    padding-right: 14px;
+    padding-left: 14px;
+}
+#first-article .content{
+    column-count: 2;
+    column-gap: 30px;
+    text-indent: 15px;
+    text-align: justify;
+}
+#first-article .writer-and-photographer{
+    direction: rtl;
+}
+#smallArticlesContainer{
+    float:left;
+    width:25%;
+    margin: 1.5%;
+    background-color: #FFFFFF;
+    display: block;
+    position: relative;
+    margin-top: 3%;
+}
+.yome-border:before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    right: -9px;
+    bottom: -9px;
+    background-image: linear-gradient(to right, #EE422F 3.5%, #FFFFFF 3.6%, #FFFFFF 96.4%, #53C4F1 96.5%);
+    z-index: 0;
+    border-radius: 5px;
+}
+#second-article {
+    padding-right: 14px;
+    padding-left: 14px;
+    position: relative;
+    background-color: #FFFFFF;
+    z-index: 2;
+    border-radius: 3px;
+    margin-bottom: -13px;
+    direction: rtl;
+}
+#third-article {
+    padding-right: 14px;
+    padding-left: 14px;
+    position: relative;
+    background-color: #FFFFFF;
+    z-index: 2;
+    border-radius: 3px;
+    direction: rtl;
+}
+#third-article h3{
+    margin-top: 14px;
+}

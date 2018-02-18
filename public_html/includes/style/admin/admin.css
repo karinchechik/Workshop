@@ -1,0 +1,34 @@
+.buttonAdmin{
+	margin-right:40%;
+	direction:rtl;
+	float:right;
+	margin-top:10%;
+	height:150px;
+	width:300px;
+	font-size:24px;
+}
+
+.btnadm{
+	width:100%;
+	height:100px;
+	font-size:24px;
+}
+
+.main_admin{
+	margin-top:5%;
+}
+.second-row{
+	margin-top:5%;
+}
+
+.row{
+	height:100px;
+}
+.main_admin{
+	padding-right:14px;
+	padding-left:14px;
+}
+
+.adm-title{
+	margin-bottom:50px;
+}

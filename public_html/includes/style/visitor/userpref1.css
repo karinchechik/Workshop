@@ -1,0 +1,476 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "atlas";
+}
+html{
+	height: 100%;
+}
+body{
+	background-color: #F2F2F2;
+	background: linear-gradient(to right,#E6E6E6, #CCCCCC, #F2F2F2);
+	background-repeat: no-repeat;
+	position: relative;
+    min-height: 100%;
+}
+#wrapper {
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+.clear{
+	clear:both;
+}
+/***********menu**************/
+aside{
+	min-width: 100px;
+	width:20%;
+	float:right;
+}
+aside div{
+	position:absolute;
+	top:20px;
+	right: 0;
+}
+nav{
+	background: linear-gradient(#EE422F,#53C4F1);
+	width:222px;
+	border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+} 
+nav li{
+	list-style:none;
+    height: 56px;
+    line-height: 48px;
+    border-bottom:1px solid #4E4E4E; 
+}
+.definiton{
+	float:right;
+	margin-right: 7PX;
+    color: #FFFFFF;
+    font-size:17px;
+	margin-top: 3px;
+}
+
+nav li.selected {
+	background-color: #4E4E4E;
+}
+nav li.selected .definition {
+	font-weight: bold;
+}
+.icon{
+	display:inline-block;
+	float:right;
+	margin-right:7px;
+	width:29px;
+	height: 24px;
+	background-image: url("../../images/spriteIcon.png");
+	margin-top: 14px;
+}
+#loadSettings .icon{
+	background-image: url("../../images/upload-icon-off.png");
+}
+
+#interDefinition .icon{
+	background-position: -115px 0;	
+}
+#interDefinition.selected .icon {
+	background-position: -115px -33px;	
+}
+#politicsChoice .icon{
+	background-position: -76px 0;
+}
+#politicsChoice.selected .icon{
+	background-position: -76px -34px;
+}
+#morePages .icon{
+	background-position: -39px 0;
+}
+#morePages.selected .icon{
+	background-position: -39px -34px;
+}
+#aboutAndHelp .icon{
+	background-position: 0 0;	
+}
+#aboutAndHelp.selected .icon {
+	background-position: 0 -34px;	
+}
+#firstOption{
+	height: 20px;	
+}
+#lastOption{
+	border-bottom: none;
+	height: 20px;
+}
+
+
+
+/*************range section********/
+header{
+	width: 560px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#logo {
+	background-image: url("../../images/yomeLogo_menu.png");
+	display: block;
+	width: 80px;
+	height: 35px;
+}
+#rangeContainer{
+	width:95%;
+}
+#rangeSec{
+	width:80%;
+	margin: 0 auto;
+	float:left;
+	margin-left: 8.5%;
+}
+
+/**********range section--main************/
+/*main{
+	background-color: #4E4E4E;
+	padding-top: 8px;
+	padding-bottom: 12px;
+	border-radius: 10px;
+	margin-top: -12px;
+    margin-left: 15px;
+}*/
+main {
+	border: 5px solid transparent;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 23px;
+	width: 560px;
+	position: relative;
+}
+
+#mainContent {
+	background-color: #4E4E4E;
+	width: 550px;
+	border: 5px solid transparent;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-radius: 3px;
+}
+
+#interestsSec{
+	margin: 0 auto;
+	width:370px;
+	height: 374px;
+}
+#interestsSec .attribute-container{	
+	width:305px;
+	margin: 0 auto;
+    margin-bottom: 39px;
+}
+
+#interestsSec .attribute{
+	direction:rtl;
+	width:305px;
+}
+.opening-line{
+	border-top: 1.5px solid #B3B3B3;
+	padding-top:7px;
+}
+#interestsSec h3{
+	color: #FFFFFF;
+	/*margin-top:0px;*/
+	margin-top: 13px;
+}
+#interestsSec h3.title-value-0 {
+	color: #B3B3B3;
+	font-weight: 300;
+}
+#interestsSec h3.title-value-1 {
+	font-weight: 300;
+}
+#interestsSec h3.title-value-2 {
+	font-weight: 400;
+}
+#interestsSec h3.title-value-3 {
+	font-weight: 500;
+}
+#interestsSec h3.title-value-4 {
+	font-weight: 700;
+}
+#interestsSec h3.title-value-5 {
+	font-weight: 900;
+}
+.numbers{
+	width:315px;
+	margin-top: 2px;
+    position: relative;
+    left: -5px;
+}
+.numbers span{
+	color: #FFFFFF;
+    margin-right: calc(20% - 14px);
+    font-size: 17px;
+}
+.numbers span:last-child {
+    margin-right: 0;
+}
+.slider-selection {
+	background: #EE422F;
+}
+.slider.slider-horizontal {
+    width: 305px;
+ }
+.slider-handle.min-slider-handle.round{
+	margin-top: -7px;
+}
+.rangeButtons{
+ 	width: 305px;
+ 	margin: auto;
+ 	border-top: 1.5px solid #B3B3B3;
+	padding-top: 12px;
+ }
+button{
+	background-color: #B3B3BE;
+	font-size: 22px;
+    margin: 0 auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-weight: bold;
+    border-radius: 2px;
+    border: #b3b3be;
+    outline: none;
+}
+#createYome{
+	margin-left: 9px;
+	margin-top: 10px;
+	padding: 0;
+	height: 31px;
+	width: 129px;
+}
+#createYome img{
+	position: relative;
+	top: -2px;
+}
+#previous{
+	float:right;
+	margin-top: 10px;
+}
+#next{
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-top: 10px;
+}
+.invisible{
+	visibility:hidden;
+}
+
+/************Politics menu************/
+#politicsMenuOption{
+	margin: 0 auto;
+	margin-bottom: 21px;
+}
+#politicsWrapper, #morePagesWrapper, #aboutSectionWrapper{
+	width:312px;
+	margin: 0 auto;
+}
+#politicsWrapper{
+	height: 403px;
+}
+.politics-menu-article{
+	float:left;
+	width:45%;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.right-article{
+	float:right;
+	width:45%;
+	direction: rtl;
+}
+.politicsDefintion{
+    color: #FFFFFF;
+    font-size:24px;
+    float: left;
+    width: 80px;
+    display: inline-block;
+    line-height: 56px;
+  }
+
+.politicsIcon{
+	display:inline-block;
+	width: 54px;
+    height: 61px;
+	float: left;
+	background-image: url("../../images/elections-icons.png");
+}
+.right-icon{
+	float:right;
+}
+.special{
+    margin-top: 4px;
+    line-height: 25px;
+}
+#hbaytHyudi .politicsIcon{
+	background-position: -263px -79px;
+}
+#hbaytHyudi.checked .politicsIcon{
+	background-position: -263px -224px;
+}
+#licod .politicsIcon {
+	background-position: -264px -6px;
+}
+#licod.checked .politicsIcon{
+	background-position: -264px -151px;
+}
+#yahdotAtora .politicsIcon{
+	background-position: -200px -79px;
+}
+#yahdotAtora.checked .politicsIcon{
+	background-position: -200px -224px;
+}
+#hamachna .politicsIcon{
+	background-position: -200px -6px;
+}
+#hamachna.checked .politicsIcon{
+	background-position: -200px -151px;
+}
+#shace .politicsIcon{
+	background-position: -136px -80px;
+}
+#shace.checked .politicsIcon{
+	background-position: -136px -225px;
+}
+#hareshima .politicsIcon{
+	background-position: -136px -6px;
+}
+#hareshima.checked .politicsIcon{
+	background-position: -136px -151px;
+}
+#israelBeytino .politicsIcon{
+	background-position: -68px -80px;
+}
+#israelBeytino.checked .politicsIcon{
+	background-position: -68px -225px;
+}
+#yeshAtid .politicsIcon{
+	background-position: -71px -6px;
+}
+#yeshAtid.checked .politicsIcon{
+	background-position: -71px -151px;
+} 
+#meratz .politicsIcon{
+	background-position: -5px -80px;
+}
+#meratz.checked .politicsIcon{
+	background-position: -5px -225px;
+}
+#kulanu .politicsIcon {
+	background-position: -6px -6px;	
+}
+#kulanu.checked .politicsIcon {
+	background-position: -6px -151px;	
+}
+
+/**********more pages***********/
+#morePagesSection{
+	margin: 0 auto;
+}
+.checkbox{
+	direction:rtl;
+}
+.checkbox label{
+	color:#FFFFFF;
+	font-size: 24px;
+}
+.checkbox input, .checkbox input:focus{
+	width:160px;
+	height: 17px;
+	outline: 0;
+}
+.input-checkbox{
+	position:none;
+	margin: 0 auto;
+	size:50px;
+}
+.checkbox label::before{
+	float:right;
+	font-size:15px;	
+	height: 24px;
+    width: 24px;
+    background-color: #4E4E4E;
+    border: 1.5px solid #ffffff;
+}
+.checkbox label::after{
+	float:right;
+	font-size: 19px;
+    margin: 0 auto;
+	color: #53C4F1;
+	margin-right: 2px;
+    margin-top: -2px;
+  
+}
+.definition-checkbox{
+	margin: -5px 40px 21px;
+}
+
+.checkbox.checked-class p{
+	color: #53C4F1;
+}
+.checkbox.checked-class label::before{
+	border: 1.5px solid #53C4F1;
+}
+.politics-menu-article.checked .politicsDefintion{
+	color: #53C4F1;
+}
+/****about section****/
+#aboutSection {
+	height: 395px;
+	width: 370px;
+	margin: 0 auto;
+}
+
+#aboutSectionWrapper p {
+	color: #ffffff;
+	direction: rtl;
+	font-size: 20.5px;
+	text-align: justify;
+}
+
+#aboutSectionWrapper p img {
+	height: 18px;
+}
+
+/****/
+#leftLineMorePages{
+    width: 12px;
+    height: 315px;
+    background-color: #EE422F;
+    position: absolute;
+    margin-left: -18px;
+    margin-top: -12px;
+}
+#rightLineMorePages{
+	 width: 12px;
+    height: 315px;
+	background-color:#EE422F;	
+    position: absolute;
+    right: 0px;
+    margin-right: 197px;
+    margin-top: -254px
+}
+
+
+.yome-border:before {
+	content: "";
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	right: -8px;
+	bottom: -8px;
+	background-image: linear-gradient(to right, #EE422F 3.5%, transparent 3.6%, transparent 96.4%, #53C4F1 96.5%);
+	z-index: -2;
+	border-radius: 5px;
+}
+

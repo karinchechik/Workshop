@@ -1,0 +1,35 @@
+[19-May-2016 13:00:23 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/karinch/public_html/newspaper2/page4.php on line 17
+[19-May-2016 13:17:35 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/karinch/public_html/newspaper2/page4.php on line 17
+[19-May-2016 13:18:29 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/karinch/public_html/newspaper2/page4.php on line 17
+[19-May-2016 13:18:32 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/karinch/public_html/newspaper2/page4.php on line 17
+[19-May-2016 13:19:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/karinch/public_html/newspaper2/page4.php on line 17
+[19-May-2016 13:19:15 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/karinch/public_html/newspaper2/page4.php on line 17
+[19-May-2016 15:13:44 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/karinch/public_html/newspaper2/page4.php on line 17
+[19-May-2016 19:58:03 UTC] PHP Warning:  mysqli_query(): Empty query in /home/karinch/public_html/newspaper2/page8.php on line 14
+[19-May-2016 19:58:03 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/karinch/public_html/newspaper2/page8.php on line 16
+[19-May-2016 19:58:06 UTC] PHP Warning:  mysqli_query(): Empty query in /home/karinch/public_html/newspaper2/page8.php on line 14
+[19-May-2016 19:58:06 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/karinch/public_html/newspaper2/page8.php on line 16
+[19-May-2016 19:58:37 UTC] PHP Warning:  mysqli_query(): Empty query in /home/karinch/public_html/newspaper2/page8.php on line 14
+[19-May-2016 19:58:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/karinch/public_html/newspaper2/page8.php on line 16
+[19-May-2016 19:58:45 UTC] PHP Warning:  mysqli_query(): Empty query in /home/karinch/public_html/newspaper2/page8.php on line 14
+[19-May-2016 19:58:45 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/karinch/public_html/newspaper2/page8.php on line 16
+[19-May-2016 19:59:10 UTC] PHP Warning:  mysqli_query(): Empty query in /home/karinch/public_html/newspaper2/page8.php on line 14
+[19-May-2016 19:59:10 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/karinch/public_html/newspaper2/page8.php on line 16
+[19-May-2016 19:59:28 UTC] PHP Warning:  mysqli_query(): Empty query in /home/karinch/public_html/newspaper2/page8.php on line 14
+[19-May-2016 19:59:28 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/karinch/public_html/newspaper2/page8.php on line 16
+[19-May-2016 20:05:44 UTC] PHP Warning:  mysqli_query(): Empty query in /home/karinch/public_html/newspaper2/page8.php on line 14
+[19-May-2016 20:05:44 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/karinch/public_html/newspaper2/page8.php on line 16
+[19-May-2016 20:18:50 UTC] PHP Warning:  mysqli_query(): Empty query in /home/karinch/public_html/newspaper2/page8.php on line 14
+[19-May-2016 20:18:50 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/karinch/public_html/newspaper2/page8.php on line 16
+[19-May-2016 20:20:50 UTC] PHP Warning:  mysqli_query(): Empty query in /home/karinch/public_html/newspaper2/page8.php on line 14
+[19-May-2016 20:20:50 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/karinch/public_html/newspaper2/page8.php on line 16
+[19-May-2016 20:28:21 UTC] PHP Warning:  mysqli_query(): Empty query in /home/karinch/public_html/newspaper2/page8.php on line 14
+[19-May-2016 20:28:21 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/karinch/public_html/newspaper2/page8.php on line 16
+[21-May-2016 09:45:57 UTC] PHP Warning:  mysqli_query(): Empty query in /home/karinch/public_html/newspaper2/page8.php on line 14
+[21-May-2016 09:45:57 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/karinch/public_html/newspaper2/page8.php on line 16
+[21-May-2016 09:47:10 UTC] PHP Warning:  mysqli_query(): Empty query in /home/karinch/public_html/newspaper2/page8.php on line 14
+[21-May-2016 09:47:10 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/karinch/public_html/newspaper2/page8.php on line 16
+[21-May-2016 09:53:05 UTC] PHP Warning:  mysqli_query(): Empty query in /home/karinch/public_html/newspaper2/page8.php on line 14
+[21-May-2016 09:53:05 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/karinch/public_html/newspaper2/page8.php on line 16
+[22-May-2016 21:02:31 UTC] PHP Warning:  mysqli_query(): Empty query in /home/karinch/public_html/newspaper2/page8.php on line 14
+[22-May-2016 21:02:31 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/karinch/public_html/newspaper2/page8.php on line 16

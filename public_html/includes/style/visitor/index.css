@@ -1,0 +1,162 @@
+* {
+	font-family:"Atlas";
+}
+.clear{
+	clear:both;
+}
+html{
+	min-height: 100%;
+}
+body {
+	background-color: #F2F2F2;
+	background: linear-gradient(to right,#E6E6E6, #CCCCCC, #F2F2F2);
+	background-repeat: no-repeat;
+}
+#wrapper {
+	width: 84%;
+	margin: 0 auto;
+	margin-top: 3%;
+    margin-bottom: 3%;
+}
+#logoContainer{
+	float: left;
+	padding-top: 10px;
+}
+#logo {
+	background-image: url("../../images/yome-logo.png");
+	display: block;
+	width: 196px;
+	height: 116px;
+}
+#dateContainer{
+	float: right;
+}
+#dateContainer p {
+	direction:rtl;
+	margin: 0 auto;
+	font-weight:bold;
+	font-size: 24px;
+}
+#currDayHebrewName {
+	color: #EE422F;
+}
+
+#hebrewDayDate, #day {
+	color: #53C4F1;
+}
+
+#year, #month {
+	margin-right: 8px;
+	font-weight: bold;
+}
+
+/***********weather************/
+.apiWeatherSection {
+    float: left;
+    margin-left: calc(50% - 365px);
+ }
+
+@media (max-width:1024px) {
+    .apiWeatherSection {
+        margin-left: calc(50% - 305px);
+    }
+}
+
+.city-weather-container {
+	float:right;
+}
+.city-weather-container.with-space {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+@media (max-width:1024px) {
+    .city-weather-container.with-space {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+#jerusalemApiWeather, #beershebaApiWeather, #eilatApiWeather {
+    margin-top: 15px;
+}
+
+.city-name-api-weather{
+	color:#53C4F1;
+	font-size:15px;
+	text-align: right;
+    line-height: 1;
+    direction: rtl;
+}
+
+.city-temp-container-api-weather {
+    float: left;
+    height: 40px;
+}
+
+.city-icon-api-weather {
+    width: 40px;
+    height: 40px;
+}
+
+.city-img-container-api-weather {
+    float: left;
+    height: 40px;
+}
+.city-temp-api-weather{
+    color:#53C4F1;
+    font-size:28px;
+    text-align: right;
+}
+#redFlatBox{
+    width: 102px;
+    height: 11px;
+    background-color: #EE422F;
+    margin-top: 7px;
+    float: right;
+}
+
+/*************main**********/
+#main_pic {
+    width: 99%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4.5%;
+    margin-bottom: 35px;
+}
+
+#scrollerImg{
+    display: block;
+    width: 100%;
+
+}
+
+#linkCreateButton{
+	text-decoration: none;
+}
+#createButton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+.marquee {
+    margin-top: 2.5%;
+    width: 100%;
+    overflow: hidden;
+    background:linear-gradient(to right, #EE422F,#53C4F1);
+    height: 30px;
+    border-radius: 4px;
+    line-height: 28px;
+    color: #ffffff;
+    font-size: 17px;
+
+}
+.marquee span{
+    direction: rtl;
+}
+
+.animated-title{
+    font-weight: bold;
+    direction: rtl;
+}

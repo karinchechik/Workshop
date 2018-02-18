@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Yome</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="../includes/ckeditor/ckeditor.js"></script>
+		<link rel="shortcut icon" href="../includes/images/logoYome.png"/>
+		<link rel="stylesheet" type="text/css" href="../includes/style/admin/style.css">
+	</head>
+	<body>
+		<header>
+		</header>
+		<main>
+			<img class="slogo" src="../includes/images/yome-menu-slogo.png">
+			<h1 class="main-con-title"><span class="end-sign">[</span> הזנת טורים ודעות <span class="start-sign">]</span></h1>
+			<form id="content-form" action="opinionPosted.php" method="post" autocomplete="on">
+				<br><label class="con-title">כותב <input class="text-box form-control" type="text" name="writer_name" value=" " maxlength="100"></label>
+				<br><br><label class="con-title">תאריך <input class="text-box form-control" type="date" name="date"></label>
+				<br><label class="con-title">כותרת ראשית <input class="text-box form-control" type="text" name="main_title" value=" " maxlength="50"></label>
+				<br><br><label class="con-title">כותרת משנית <input class="text-box form-control" type="text" name="sub_title" value=" " maxlength="100"></label>
+				<!--<br><br><label class="con-title">צלם <input class="text-box form-control" type="text" name="photographer_name" value=" " maxlength="100"></label>
+				<br><br><label class="con-title">תמונה 
+				<!--<input class="pic" type="file" name="articlePicture" accept="image/*"></label>
+				<br><label for="file-upload" class="custom-file-upload">Upload File</label>
+				<input id="file-upload" type="file" class="pic" name="image" accept="image/*"/> -->
+				<br><br><label class="con-title article-text">תוכן <br><textarea id="editor1" rows="30" cols="100" name="content"></textarea></label>
+				<script>
+	                CKEDITOR.replace('editor1');
+	            </script>
+
+				<h3 class="tag-title">תגיות </h3>
+				<label class="checkbox1">&nbsp; ביטחון <input type="checkbox" name="tags[]" value="bitahon"></label><br>
+				<label class="checkbox1">&nbsp; ידיעות מהעולם <input type="checkbox" name="tags[]" value="yediot"></label><br>
+				<label class="checkbox1">&nbsp; משפט ופלילים <input type="checkbox" name="tags[]" value="mishpatAndPlilim"></label><br>
+				<label class="checkbox1">&nbsp; כלכלה וצרכנות <input type="checkbox" name="tags[]" value="calcala"></label><br>
+				<label class="checkbox1">&nbsp; פוליטיקה <input type="checkbox" name="tags[]" value="politics"></label><br>
+				<label class="checkbox1">&nbsp; חינוך וחברה <input type="checkbox" name="tags[]" value="hinoh"></label><br>
+				<label class="checkbox1">&nbsp; ספורט <input type="checkbox" name="tags[]" value="sport"></label><br>
+				<label class="checkbox1">&nbsp; טלויזיה ובידור <input type="checkbox" name="tags[]" value="televistion"></label><br>
+				<label class="checkbox1">&nbsp; אומנות ותרבות <input type="checkbox" name="tags[]" value="omanot"></label><br>
+				<label class="checkbox1">&nbsp; מדע וטכנולוגיה <input type="checkbox" name="tags[]" value="madaAndTec"></label><br>
+				<label class="checkbox1">&nbsp; מוזיקה <input type="checkbox" name="tags[]" value="music"></label><br>
+				<label class="checkbox1">&nbsp; בריאות וטבע <input type="checkbox" name="tags[]" value="briot"></label><br>
+				<label class="checkbox1">&nbsp; תחבורה <input type="checkbox" name="tags[]" value="tahbora"></label><br>
+				<label class="checkbox1">&nbsp; דת <input type="checkbox" name="tags[]" value="dat"></label><br>
+				<label class="checkbox1">&nbsp; אופנה <input type="checkbox" name="tags[]" value="ofna"></label><br>
+				<label class="checkbox1">&nbsp; תיירות <input type="checkbox" name="tags[]" value="taiarot"></label><br>
+				<br><br><input class="btn btn-default btn-lg sub-button" type="submit" value=" שלח ">
+			</form>
+		</main>
+	</body>
+</html>

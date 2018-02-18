@@ -1,0 +1,165 @@
+.page3 {
+    border: 0 solid red;
+}
+
+
+
+.page3 .articles-container {
+    height: calc(100% - 55px);
+    position: relative;
+}
+/*************left-pane********************************/
+.page3 .left-pane {
+    float: left;
+    width: calc(35% - 22px);
+    height: calc(100% - 22px);
+    margin-top: 11px;
+    margin-left: 11px;
+    position: relative;
+}
+
+.page3 .yome-border:before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: -11px;
+    right: -11px;
+    bottom: -11px;
+    background-image: linear-gradient(to right, #EE422F 7%, #FFFFFF 7.1%, #FFFFFF 92.9%, #53C4F1 93%);
+    z-index: 0;
+    border-radius: 5px;
+}
+
+.page3 .left-pane .yome-border-container {
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    display: block;
+    position: relative;
+}
+
+.page3 .yome-border-container .left-pane-articles-container {
+    padding: 5% 5%;
+    position: relative;
+    background-color: #FFFFFF;
+    z-index: 2;
+    border-radius: 2px;
+    height: 100%;
+}
+
+.page3 .left-pane .article-container:last-child {
+    margin-top: 26px;
+}
+
+.page3 .left-pane .article-container h3{
+    font-family:"atlas";
+    font-size: 27px;
+    padding: 2px;
+    margin: 0 0 15px;
+    text-align: center;
+    direction: rtl;
+}
+
+.page3 .left-pane .article-container .content-container{
+    font-family: "opensans";
+    text-align: justify;
+    direction: rtl;
+    font-size: 14px;
+    color: #000000;
+}
+
+.page3 .left-pane .article-container .content-container p {
+    margin: 0;
+    text-indent: 15px;
+}
+
+.page3 .left-pane .article-container .content-container p:first-child {
+    text-indent: 0;
+}
+
+.page3 .left-pane .article-container .writer-container{
+    font-size: 17px;
+    line-height: 17px;
+    font-family: "opensans-bold";
+    color: #4E4E4E;
+    direction: rtl;
+    text-align: left;
+    margin-top: 26px;
+}
+/*************right-pane********************************/
+.page3 .right-pane {
+    direction: rtl;
+    float: right;
+    width: 61%;
+    height: 100%;
+    margin-left: 30px;
+    position: relative;
+}
+
+.page3 .right-pane .article-container .title-container {
+    width: 80%;
+}
+.page3 .right-pane .article-container .title-container h2{
+    background-color: #EE422F;
+    display: inline-block;
+    font-family: "atlas";
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 31px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    margin-top: 0;
+    margin-bottom: 11px;
+}
+.page3 .right-pane .article-container .sub-title-container{
+    width:86%;
+}
+.page3 .right-pane .article-container .sub-title-container h4{
+    color: #EE422F;
+    font-size: 19.5px;
+    font-family: opensans;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+.page3 .right-pane .article-container .writer-and-photographer-container{
+    margin-bottom: 18px;
+}
+
+.page3 .right-pane .article-container .writer-and-photographer-container span{
+    font-size: 17px;
+    line-height: 17px;
+    font-family: "opensans-bold";
+    color: #4E4E4E;
+}
+.page3 .right-pane .article-container .content-container{
+    width: 100%;
+    font-family: "opensans";
+    font-size: 14px;
+    color: #000000;
+    text-align: justify;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px
+}
+.page3 .right-pane .article-container .content-container p:first-child {
+    margin: 0;
+    text-indent: 0px;
+}
+.page3 .right-pane .article-container .content-container p {
+    margin: 0;
+    text-indent: 15px;
+}
+
+.page3 .right-pane .article-container .image-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.page3 .right-pane .article-container .image-container img{
+    width: 100%;
+    margin-top: 18px;
+}

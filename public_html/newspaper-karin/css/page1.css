@@ -1,0 +1,317 @@
+*{
+	margin:0 auto;
+	padding:0;
+	font-family:"opensans";
+}
+.clear{
+    clear:both;
+}
+.wrapper {
+    margin: 2%;
+    background-color: #ffffff;
+   /* height: 635px;*/
+    direction: rtl;
+    border: #000000 1px solid;
+    padding: 2.5%;
+}
+/********generate***********/
+.photograpAndPageNumberContainer{
+    top: 150px;
+    position: relative;
+    padding: 8px;
+}
+h3{
+    font-size: 21px;
+}
+.pageNumber{
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    padding-right: 5px;
+}
+.writer-and-photographer{
+    float: right;
+    font-size: 15px;
+    margin-bottom: 0px;
+    color:#ffffff;
+}
+/************first Container***************************/
+#firstContainer {
+    margin-bottom: 3.5%;
+}
+/**weather***/
+#weatherContainer{
+    float: left;
+    width:50%;
+    margin-right: 1.5%;
+    height: 164px;
+}
+.city-temp-container-api-weather {
+    float: left;
+    max-height: 47px;
+    line-height: 39px;
+}
+.city-img-container-api-weather {
+    float: right;
+}
+.city-icon-api-weather {
+    width: 40px;
+    height: 40px;
+}
+.city-name-api-weather {
+    font-size: 18px;
+    color: #53C4F1;
+    text-align: right;
+    font-family: atlas;
+    font-weight: 500;
+}
+.city-temp-api-weather {
+    font-size: 39px;
+    color: #53C4F1;
+    text-align: right;
+    font-family: atlas;
+    font-weight: 500;
+}
+#logoImg{
+    float: right;
+    margin-right: 1.5%;
+    height: 164px;
+}
+.city-weather-container {
+    float: right;
+    margin-bottom: 24px;
+}
+.with-space{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+/**********SecondContainer*************/
+#secondContainer{
+    margin-bottom: 2.5%;
+}
+#first-article-container {
+    float: left;
+    width: 61%;
+    margin-top: 11px;
+    margin-left: 11px;
+    background-color: #FFFFFF;
+    display: block;
+    position: relative;
+}
+#first-article{
+    padding-right: 14px;
+    padding-left: 14px;
+    position: relative;
+    background-color: #FFFFFF;
+    z-index: 2;
+    border-radius: 3px;
+    height: 178px;
+}
+#first-article h2{
+    font-family:"atlas";
+    font-size: 33px;
+    margin-top: 0px;
+    padding-top: 5px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: 900;
+}
+#first-article h3{
+    margin: 0px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+}
+#first-article .pageNumber{
+    color: #EE422F;
+    top:171px;
+    left:46%;
+    font-weight: normal;
+    position: absolute;
+}
+.yome-border:before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: -11px;
+    right: -11px;
+    bottom: -11px;
+    background-image: linear-gradient(to right, #EE422F 4.5%, #FFFFFF 4.5%, #FFFFFF 95.5%, #53C4F1 95.5%);
+    z-index: 0;
+    border-radius: 5px;
+}
+/****date****/
+#dateContainer{
+    float: right;
+    width: 30%;
+    height: 63.5%;
+    margin-right: 1.5%;
+    display: block;
+}
+#currDayHebrewName {
+    font-family:"atlas";
+    text-align: center;
+    border: 1px solid black;
+    font-size: 42px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #EE422F;
+    line-height: 46px;
+    margin-bottom: 13px;
+    padding-bottom: 5px;
+}
+#hebrewAndForeignContainer{
+    border: 1px solid black;
+    padding-bottom: 6px;
+    font-weight: 500;
+}
+#hebrewMonthDateContainer{
+    float: right;
+    width: 21%;
+    font-size: 18px;
+    padding-right: 8px
+}
+#foreignDate{
+    float:left;
+    width:24%;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 7px;
+}
+#hebrewDayDate, #day {
+    color: #53C4F1;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    font-family:"atlas";
+}
+#year, #month,#hebrewMonthDate, #hebrewYearDate {
+    font-size: 32px;
+    line-height: 35px;
+    font-family:"atlas";
+}
+/**********second Article*************/
+#second-article {
+    width: 98.5%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    height: 450px;
+    border-radius: 15px;
+    border: #000000 1px solid;
+}
+#second-article .small-main-title{
+    font-family:"atlas";
+    background-color: #53C4F1;
+    font-size: 65px;
+    text-align: right;
+    color: #ffffff;
+    margin-right: 0px;
+    width: 371px;
+    margin-top: 200px;
+    text-shadow: 3px 1px 1px #000000;
+    font-weight: 800;
+    padding-right: 8px;
+    line-height: 58px;
+    padding-bottom: 6px;
+}
+#second-article .small-sub-title{
+    color: #ffffff;
+    background-color: #4E4E4E;
+    width: 668px;
+    margin-right: 0px;
+    opacity: 0.9;
+    padding: 7px;
+    line-height: 1.3;
+    font-size: 23px;
+}
+#second-article .photograpAndPageNumberContainer{
+    top: 77px;
+    position: relative;
+}
+#second-article .pageNumber{
+    background-color:#53C4F1 ;
+    color: #000000;
+    margin-right: 7px;
+}
+/**********thirdContainer*************/
+#thirdContainer{
+    margin-top: 2.5%;
+    margin-bottom: 2%;
+}
+#third-article{
+    float:left;
+    width: 57%;
+    margin-right: 1.5%;
+    height: 300px;
+    border: #000000 1px solid;
+    border-radius: 15px;
+}
+#third-article .small-main-title {
+    background-color: #EE422F;
+    font-family:"atlas";
+    color: #ffffff;
+    width: 232px;
+    margin-right: 0px;
+    padding-right: 7px;
+    font-size: 40px;
+    text-shadow: 3px 1px 1px #000000;
+    font-weight: 800;
+}
+#third-article .pageNumber{
+    color: #000000;
+    background-color: #EE422F;
+    margin-right: 0px;
+    display: inline;
+    font-size: 24px;
+}
+#forth-article-container{
+    float:right;
+    width: 37%;
+    margin-left: 1.5%;
+    margin-top: 10px;
+    position: relative;
+    display: block;
+    margin-right: 28px;
+    background-color: #FFFFFF;
+}
+#forth-article{
+    position: relative;
+    height: 280px;
+    padding-right: 14px;
+    padding-left: 14px;
+    background-color: #FFFFFF;
+    z-index: 2;
+    border-radius: 3px;
+}
+#forth-article h2{
+    font-family:"atlas";
+    font-size: 36px;
+    margin-top: 0px;
+    padding-top: 5px;
+    margin-bottom: 7px;
+    text-align: center;
+    font-weight: bold;
+}
+#forth-article h3{
+    margin: 0px;
+}
+#forth-article .pageNumber{
+    color: #EE422F;
+    background-color: transparent;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 24px;
+    font-weight: normal;
+    position: absolute;
+    left: 41%;
+    top: 90%;
+
+}
+#forth-article .small-sub-title{
+    text-align: justify;
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 21px;
+}

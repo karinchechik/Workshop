@@ -1,0 +1,226 @@
+* {
+	font-family:"Atlas";
+}
+.clear{
+	clear: both;
+}
+/****left-side****/
+#miniPaper{
+    float: left;
+    padding: 2%;
+    height: 600px;
+    width: 50%;
+    background-color: #ffffff;
+    border: 1.5px solid #000000;
+}
+#weatherContainer,#logoImg, .small-story, #mainImg{
+	float:left; 
+	display:block;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+#dateContainer{
+	float: right;
+    margin-right: 2.5%;
+}
+#weatherContainer{
+	width:47%;
+	margin-right:11%;
+}
+#logoImg{
+    width: 40%;
+    height: 130px;    
+}
+
+.small-story {
+    width: 57%;
+}
+#dateContainer{
+	width:30%;
+}
+/**weather***/
+.city-name-api-weather, .city-temp-api-weather {
+    font-size: 17px;
+}
+
+/****date****/
+#currDayHebrewName {
+    text-align: center;
+    border: 1px solid black;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#hebrewAndForeignContainer{
+	border: 1px solid black;
+	padding-left: 5px;
+    padding-right: 5px;
+}
+#hebrewMonthDate{
+    float: right;
+    width: 21%;
+    text-align: end;
+    font-size: 18px;
+}
+#foreignDate{
+	float:left;
+	width:20%;
+	text-align: left;
+	font-size: 18px;
+}
+#mainImg{
+	width:98%;
+	background-color: yellow;
+	height: 100px;
+}
+
+/****right-side****/
+p {
+    margin: 0 0 5px;
+}
+#summaryChoices{
+    float: right;
+    width: 50%;
+    padding: 2%;
+}
+#userFinalChoices{
+	width:370px;
+	float: right;
+}
+#title{
+    direction: rtl;
+}
+#title span {
+    position: relative;
+    display: inline-block;
+    background-color: #4E4E4E;
+    padding: 0 10px;
+    color: white;
+    font-size: 36px;
+    line-height: 36px;
+    border-radius: 2px;
+}
+.yome-border:before {
+    content: "";
+    position: absolute;
+}
+.yome-border:before {
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background-image: linear-gradient(to right, #EE422F 3.5%, #4E4E4E 3.6%, #4E4E4E 96.4%, #53C4F1 96.5%);
+    z-index: -2;
+    border-radius: 3px;
+}
+.user-final-choices-article{
+	float:right;
+	width:150px;
+	direction: rtl;
+	margin-right:30px;
+	margin-top:20px;
+}
+#thirdUserArticleChoices, #fourthUserArticleChoices{
+	margin-top:40px;
+	margin-bottom:20px;
+}
+#morePagesUserChoices{
+	direction: rtl;
+	margin-right: 30px;
+	margin-top:15px;
+}
+#politicsUserOpinion{
+	margin-bottom:10px;
+}
+.category-name, .category-choice-number,.category-choice-more,#politicsUserOpinion, #moreOptions{
+	font-size: 16px;
+}
+.category-choice-number, .category-choice-more{
+	color:#EE422F;
+	font-weight:bold;
+}
+
+#moreOptions .red-plus, #moreOptions .text {
+    color:#EE422F;
+    font-weight:bold;
+    margin-right: 5px;
+}
+/**buttons***/
+.summary-buttons-container{
+	float:right;
+	margin-top:75px;
+	margin-right:30px;
+    direction: rtl;
+}
+.summary-buttons{
+    font-size: 22px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background: #B3B3BE;
+    font-weight: bold;
+    border-radius: 2px;
+    border: #B3B3BE;
+    outline: none;
+    margin-left: 11px;
+}
+#printAndSaveButton{
+    padding-left: 21px;
+    padding-right: 21px;
+}
+#printButton{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+#wachButton{
+    background:linear-gradient(to right, #EE422F,#53C4F1)
+}
+#wachButton a{
+    text-decoration: none;
+    color:#FFFFFF;
+}
+.saveUsersDetailsButton{
+    float:left;
+    background-color: #B3B3BE;
+    margin: 0 auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-weight: bold;
+    border-radius: 2px;
+    border: #b3b3be;
+    outline: none
+}
+#saveButton{
+    font-size: 23px;
+    background-color: #B3B3BE;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: bold;
+    border-radius: 2px;
+    border: #b3b3be;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 28px;
+}
+/***font class for the categores-JS**/
+.category-name.title-value-0 {
+	color: #B3B3B3;
+	font-weight: 300;
+}
+.category-name.title-value-1 {
+	font-weight: 300;
+}
+.category-name.title-value-2 {
+	font-weight: 400;
+}
+.category-name.title-value-3 {
+	font-weight: 500;
+}
+.category-name.title-value-4 {
+	font-weight: 700;
+}
+.category-name.title-value-5 {
+	font-weight: 900;
+}

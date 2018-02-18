@@ -1,0 +1,121 @@
+*{
+	margin:0 auto;
+	padding:0;
+	font-family:"opensans";
+}
+.clear{
+    clear:both;
+}
+/****header****/
+header{
+    width:97%;
+    margin: 1.5%;
+    padding-right: 14px;
+    padding-left: 14px;
+    margin-bottom: 35px;
+    margin-top: 40px;
+}
+#headerContainer{
+    font-weight: 500;
+    font-size: 16px;
+}
+#circle{
+    font-family: atlas;
+    float: right;
+    height: 35px;
+    width: 35px;
+    border-radius: 17px;
+    background-color: #000000;
+    font-size: 26px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-right: 0px;
+    line-height: 31px;
+}
+#dateContainer{
+    float: right;
+    line-height: 35px;
+    margin-right: 15px;
+}
+#smallLogoImg{
+    margin-top: -2px;
+    height: 35px;
+}
+#currDayHebrewName{
+    color:#EE422F;
+    font-family: opensans-bold;
+}
+#hebrewDate,#foreignDate{
+    font-family: opensans-bold;
+}
+.wrapper {
+    margin: 2%;
+    background-color: #ffffff;
+    /* height: 635px;*/
+    direction: rtl;
+    border: #000000 1px solid;
+}
+#first-article {
+    width: 97%;
+    height: 63.5%;
+    margin: 1.5%;
+    display: block;
+    padding-right: 14px;
+    padding-left: 14px;
+}
+#titlesContainer{
+    position: relative;
+    top: -190px;
+}
+.main-title {
+    font-family: atlas;
+    background-color: #53C4F1;
+    font-size: 63px;
+    text-align: right;
+    color: #000000;
+    margin-right: 0px;
+    width: 371px;
+    font-weight: 800;
+    padding-right: 8px;
+    line-height: 53px;
+    padding-bottom: 6px;
+}
+.sub-title{
+    color: #53C4F1;
+    background-color: #ffffff;
+    width: 422px;
+    margin-right: 0px;
+    margin-top: 0px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-right: 5px;
+}
+#mainArticleContainer {
+    top: -186px;
+    position: relative;
+}
+.writer-and-photographer {
+    font-family: opensans-bold;
+    padding-right: 8px;
+}
+#first-article .content{
+    column-count: 4;
+    column-gap: 30px;
+    text-align: justify;
+    text-indent: 15px;
+    padding-right: 8px
+}
+.content p{
+    text-indent: 15px;
+    text-align: justify;
+    column-gap: 30px;
+}
+.content-img{
+    width:100%;
+    height:222px;
+    border-radius: 15px;
+}
+.red{
+    color: yellow;
+}

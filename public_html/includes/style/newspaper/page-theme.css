@@ -1,0 +1,64 @@
+
+.row {
+    margin: 0;
+}
+
+.page-container {
+    width: 813px;
+    height: 1096px;
+    background: #FFFFFF;
+}
+
+.page-container header {
+    margin-bottom: 20px;
+}
+
+header .circle{
+    font-family: 'atlas';
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #4E4E4E;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 31px;
+}
+
+header .logo-container {
+    height: 35px;
+    margin: 0 10px;
+}
+
+header .logo-container img{
+    height: 35px;
+}
+
+header .date-container {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "opensans-bold";
+    direction: rtl;
+}
+
+header .currDayHebrewName{
+    color: #EE422F;
+}
+
+header .separator {
+    margin: 0 5px;
+}
+
+
+header.right-align .circle,
+header.right-align .logo-container,
+header.right-align .date-container {
+    float: right;
+}
+
+header.left-align .circle,
+header.left-align .logo-container,
+header.left-align .date-container {
+    float: left;
+}

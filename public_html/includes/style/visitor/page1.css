@@ -1,0 +1,247 @@
+*{
+	margin:0 auto;
+	padding:0;
+	font-family:"atlas";
+}
+.clear{
+    clear:both;
+}
+.wrapper {
+    margin: 2%;
+    background-color: #ffffff;
+   /* height: 635px;*/
+    direction: rtl;
+    border: #000000 1px solid;
+    padding: 2.5%;
+}
+/********generate***********/
+.photograpAndPageNumberContainer{
+    top: 150px;
+    position: relative;
+    padding: 8px;
+}
+h3{
+    font-size: 21px;
+}
+.pageNumber{
+    float: left;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: #ffffff;
+}
+.writer-and-photographer{
+    float: right;
+    font-size: 15px;
+    margin-bottom: 0px;
+    color:#ffffff;
+}
+/**weather***/
+#weatherContainer{
+    float: left;
+    width:50%;
+    margin-right: 1.5%;
+}
+.city-temp-container-api-weather {
+    float: left;
+    max-height: 47px;
+    line-height: 47px;
+}
+.city-img-container-api-weather {
+    float: right;
+}
+.city-icon-api-weather {
+    width: 40px;
+    height: 40px;
+}
+.city-name-api-weather {
+    font-size: 18px;
+    color: #53C4F1;
+    text-align: right;
+}
+.city-temp-api-weather {
+    font-size: 28px;
+    color: #53C4F1;
+    text-align: right;
+}
+#logoImg{
+    float: right;
+    margin-right: 1.5%;
+    height: 164px;
+}
+.city-weather-container {
+    float: right;
+    margin-bottom: 24px;
+}
+.with-space{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+/**********firstContainer*************/
+#first-article-container {
+    float: left;
+    width: 60%;
+    margin-right: 1.5%;
+    margin-top: 2.1%;
+    margin-left: 8px;
+    background-color: #FFFFFF;
+    display: block;
+    position: relative;
+}
+#first-article{
+    padding-right: 14px;
+    padding-left: 14px;
+    position: relative;
+    background-color: #FFFFFF;
+    z-index: 2;
+    border-radius: 3px;
+    height: 178px;
+}
+#first-article h2{
+    font-size: 33px;
+    margin-top: 0px;
+    padding-top: 5px;
+    margin-bottom: 7px;
+    text-align: center;
+}
+#first-article h3{
+    margin: 0px;
+}
+#first-article .pageNumber{
+    color:#000000;
+}
+.yome-border:before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    right: -9px;
+    bottom: -9px;
+    background-image: linear-gradient(to right, #EE422F 3.5%, #FFFFFF 3.6%, #FFFFFF 96.4%, #53C4F1 96.5%);
+    z-index: 0;
+    border-radius: 5px;
+}
+/****date****/
+#dateContainer{
+    float: right;
+    width: 30%;
+    height: 63.5%;
+    margin-top: 1.5%;
+    margin-right: 1.5%;
+    display: block;
+}
+#currDayHebrewName {
+    text-align: center;
+    border: 1px solid black;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #EE422F;
+}
+#hebrewAndForeignContainer{
+    border: 1px solid black;
+}
+#hebrewMonthDateContainer{
+    float: right;
+    width: 21%;
+    font-size: 18px;
+    padding-right: 8px
+}
+#foreignDate{
+    float:left;
+    width:20%;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 7px;
+}
+#hebrewDayDate, #day {
+    color: #53C4F1;
+    font-weight: bold;
+    font-size: 38px;
+}
+#year, #month,#hebrewMonthDate, #hebrewYearDate {
+    font-size: 22px;
+}
+#red-box{
+    margin-top: 2px;
+    background-color: #EE422F;
+    height: 20px;
+}
+/**********secondContainer*************/
+#secondContainer{
+    margin-bottom: 2.5%;
+}
+#second-article {
+    width: 98.5%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    height: 450px;
+    padding-right: 14px;
+    padding-left: 14px;
+    border: #000000 1px solid;
+}
+#second-article .small-main-title{
+    background-color:#53C4F1 ;
+    font-size: 65px;
+    text-align: center;
+    color: #ffffff;
+}
+#second-article .small-sub-title{
+    color:#ffffff;
+    background-color:#4E4E4E ;
+}
+#second-article .photograpAndPageNumberContainer{
+    top: 77px;
+    position: relative;
+}
+/**********thirdContainer*************/
+#thirdContainer{
+    margin-top: 2.5%;
+    margin-bottom: 2%;
+}
+#third-article{
+    float:left;
+    width: 47%;
+    margin-right: 1.5%;
+    height: 300px;
+    border: #000000 1px solid;
+}
+#third-article .small-main-title {
+    background-color:#EE422F ;
+    color:#ffffff;
+}
+#forth-article-container{
+    float:right;
+    width: 47%;
+    margin-left: 1.5%;
+    margin-top: 9px;
+    position: relative;
+    display: block;
+    margin-right: 26px;
+    background-color: #FFFFFF;
+}
+#forth-article{
+    position: relative;
+    height: 282px;
+    padding-right: 14px;
+    padding-left: 14px;
+    background-color: #FFFFFF;
+    z-index: 2;
+    border-radius: 3px;
+}
+#forth-article h2{
+    font-size: 36px;
+    margin-top: 0px;
+    padding-top: 5px;
+    margin-bottom: 7px;
+    text-align: center;
+    font-weight: bold;
+}
+#forth-article h3{
+    margin: 0px;
+}
+#forth-article .pageNumber{
+    color:#000000;
+}
+

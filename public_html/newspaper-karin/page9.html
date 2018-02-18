@@ -1,0 +1,169 @@
+<!--<?php
+/**
+ * Created by IntelliJ IDEA.
+ * User: user
+ * Date: 29/04/2016
+ * Time: 12:52
+ */
+
+//$sql= "SELECT * FROM articles WHERE tags LIKE '%$category_for_article1%' ORDER BY date DESC LIMIT 1, 1"; /* returns the second article */
+//$sql= "SELECT * FROM articles WHERE tags LIKE '%$category_for_article1%' ORDER BY date DESC LIMIT 2, 1"; /* returns the third article */
+
+$dbhost = "localhost";
+$dbuser = "karinch_karinch";
+$dbpass = "88556633";
+$dbname = "karinch_yome_db1";
+$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+mysqli_set_charset($connection, "utf8");
+
+
+$selections = json_decode($_COOKIE["yome_selections"]);
+$category_article1 = $selections->interests[2]->id;
+$category_article2 = $selections->interests[2]->id;
+$category_article3 = $selections->interests[3]->id;
+
+$sql_article1= "SELECT * FROM articles WHERE tags LIKE '%$category_article1%' ORDER BY date DESC LIMIT 0, 1"; /* returns the first article */
+$sql_article2= "SELECT * FROM articles WHERE tags LIKE '%$category_article2%' ORDER BY date DESC LIMIT 1, 1"; /* returns the second article */
+$sql_article3= "SELECT * FROM articles WHERE tags LIKE '%$category_article3%' ORDER BY date DESC LIMIT 0, 1";
+
+$result_article1 = mysqli_query($connection, $sql_article1);
+$result_article2 = mysqli_query($connection, $sql_article2);
+$result_article3 = mysqli_query($connection, $sql_article3);
+
+$article1 = mysqli_fetch_assoc($result_article1);
+$article2 = mysqli_fetch_assoc($result_article2);
+$article3 = mysqli_fetch_assoc($result_article3);
+?>-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Yome</title>
+
+		<link rel="shortcut icon" href="../includes/images/logoYome.png"/>
+		<!--modal-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link href="../includes/style/font.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/page9.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!--scroll bar--->
+		<script src="../includes/js/libs/jquery.mCustomScrollbar.concat.min.js"></script>
+		<!--JS-->
+		<script type="text/javascript" src="../includes/js/libs/gematria.js"></script>
+		<script type="text/javascript" src="../includes/js/utils/dateUtils.js"></script>
+		<script type="text/javascript" src="../includes/js/utils/dateHebrewUtils.js"></script>
+		<script type="text/javascript" src="../includes/js/pages/newspaper/newsPaperPages.js"></script>
+		<script type="text/javascript" src="../includes/js/pages/newspaper/newsPaperPages.js"></script>
+	</head>
+	<body>
+		<main id="page9">
+			<div class="wrapper">
+                <header>
+                    <div id="headerContainer">
+                        <div id="dateContainer">
+                            <span id="currDayHebrewName"></span>
+                            <span id="hebrewDate"></span>
+                            <span id="foreignDate"></span>
+                            <img id="smallLogoImg" src="../includes/images/summary-logo.png">
+                        </div>
+                        <div id="circle">09</div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </header>
+				<div id="first-article-container">
+                    <div id="first-article" class="article-click-container" data-article-type="2"> <!--data-article="<?php echo $article1["id"]?>"-->
+                        <div class="titles-and-img-container">
+                            <div class="only-titles-container">
+                                <h1 class="main-title">כותרת כתבה בינונית תחום עניין 2 עד 50 תוים םםםםםםם </h1>
+                                <h3 class="sub-title">כותרת משנה של כתבה בינונית מתחום עניין 2 יש מקום עד 90 תוים בשדה הטקסט הזה ולא יותר םםםםםם</h3>
+                                <p class="writer-and-photographer">שם הכתב (צילום:שם הצלם)</p>
+                            </div>
+                            <img class="content-img" ><!--src="data:image/jpeg;base64, <?php echo $article1["image1"] ?> ">;-->
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                       <div class="content">
+                            בארץ-ישראל קם העם היהודי, בה עוצבה דמותו הרוחנית, הדתית והמדינית, בה חי חיי קוממיות ממלכתית, בה יצר נכסי תרבות לאומיים וכלל-אנושיים והוריש לעולם כולו את ספר הספרים הנצחי. לאחר שהוגלה העם מארצו בכוח הזרוע שמר לה אמונים בכל ארצות פזוריו, ולא חדל מתפילה ומתקוה לשוב לארצו ולחדש בתוכה את חירותו המדינית.
+                            מתוך קשר היסטורי ומסורתי זה חתרו היהודים בכל דור לשוב ולהאחז במולדתם העתיקה; ובדורות האחרונים שבו לארצם בהמונים, וחלוצים, מעפילים ומגינים הפריחו נשמות, החיו שפתם העברית, בנו כפרים וערים, והקימו ישוב גדל והולך השליט על משקו ותרבותו, שוחר שלום ומגן על עצמו, מביא ברכת הקידמה לכל תושבי הארץ ונושא נפשו לעצמאות ממלכתית.
+                            בשנת תרנ"ז (1897) נתכנס הקונגרס הציוני לקול קריאתו של הוגה חזון המדינה היהודית תיאודור הרצל והכריז על זכות העם היהודי לתקומה לאומית בארצו. זכות זו הוכרה בהצהרת בלפור מיום ב' בנובמבר 1917 ואושרה במנדט מטעם חבר הלאומים, אשר נתן במיוחד תוקף בין-לאומי לקשר ההיסטורי שבין העם היהודי לבין ארץ-ישראל ולזכות העם היהודי להקים מחדש את ביתו הלאומי.
+                            השואה שנתחוללה על עם ישראל בזמן האחרון, בה הוכרעו לטבח מיליונים יהודים באירופה, הוכיחה מחדש בעליל את ההכרח בפתרון בעית העם היהודי מחוסר המולדת והעצמאות על-ידי חידוש המדינה היהודית בארץ-ישראל, אשר תפתח לרווחה את שערי המולדת לכל יהודי ותעניק לעם היהודי מעמד של אומה שוות-זכויות בתוך משפחת העמים. שארית הפליטה שניצלה מהטבח הנאצי האיום באירופה ויהודי ארצות אחרות לא חדלו להעפיל לארץ-ישראל, על אף כל קושי, מניעה וסכנה, ולא פסקו לתבוע את זכותם לחיי כבוד, חירות ועמל-ישרים במולדת עמם.
+                            במלחמת העולם השניה תרם הישוב העברי בארץ את מלוא-חלקו למאבק האומות השוחרות חירות ושלום נגד כוחות הרשע הנאצי, ובדם חייליו ובמאמצו המלחמתי קנה לו את הזכות להמנות עם העמים מייסדי ברית האומות המאוחדות.
+                        </div>
+                    <!--	<?php
+						/**first article in the page- miduem [2]*/
+						echo '<h1 class="main-title">' .$article1["main_title2"] . '</h1>';
+						echo '<h3 class="sub-title">' .$article1["sub_title2"] . '</h3>';
+						echo '<p class="writer-and-photographer">'. $article1["articleWriter"]."  "."|  צילום: " .$article1["articlePhotographer2"] .'</p>';
+						echo '<div class="content">'. $article1["articleMed"] .'</div>';
+						echo '<img class="content-img">';
+					?>-->
+				    </div>
+                </div>
+				<div id="second-till-fourth-article-container">
+					<div id="second-article" class="article-click-container" data-article-type="2"> <!--data-article="<?php echo $article1["id"]?>"-->
+                        <div class="title-and-writer-container ">
+                            <h3 class="small-main-title"><span class="red-class">> </span>כותרת כתבה קטנה תחום עניין 3 עד 50 תוים םםםםםםם םם</h3>
+                            <p class="small-writer">שם הכתב</p>
+                        </div>
+                        <div class="small-content">
+                            <p>קבוצת סטודנטיות מאוניברסיטת בר-אילן פנו להנהלת המוסד בבקשה לקבל מועד מיוחד לבחינות, מאחר ובתאריך הבחינה הן אמורות ללדת. ע"פ הנהלים הקיימים, במידה וייכשלו במועד ב' הן יהיו זכאיות למועד נוסף, אך הוא עלול להיות בשנה שלאחר מכן.</p>
+                            <p>"אני אמורה ללדת בינואר, בדיוק בתחילת תקופת המבחנים. לארבעת המבחנים הראשונים לא אוכל לגשת. פניתי להנהלת המחלקה ולאוניברסיטה, כי אם אכשל במועד ב,' לא יכתבו מבחן נוסף עבורי ועבור חברות שנמצאות במצב דומה לשלי", סיפרה אחת הסטודנטיות שיזמו את המהלך, "צריך להיות נוהל אחיד לסטודנטיות שעומדות להפוך לאימהות בכל המוסדות בישראל, כפי שעשו את זה למען חיילי מילואים עם מועד בחינה מיוחד"</p>
+                        </div>
+                       <!--<?php
+							/**second article in the page- smallOne [3] */
+							echo '<h2 class="small-main-title">' .$article2["main_title3"] . '</h2>';
+							echo '<p class="writer-and-photographer">'. $article3["articleWriter"] .'</p>';
+							echo '<div class="med-content">'. $article2["articleSmall"] .'</div>';
+						?>-->
+
+					</div>
+                    <div id="third-article" class="article-click-container" data-article-type="2"> <!--data-article="<?php echo $article1["id"]?>"-->
+                        <div class="title-and-writer-container ">
+                            <h3 class="small-main-title"><span class="red-class">> </span>כותרת כתבה קטנה תחום עניין 3 עד 50 תוים םםםםםםם םם</h3>
+                            <p class="small-writer">שם הכתב</p>
+                        </div>
+                        <div class="small-content">
+                            <p>קבוצת סטודנטיות מאוניברסיטת בר-אילן פנו להנהלת המוסד בבקשה לקבל מועד מיוחד לבחינות, מאחר ובתאריך הבחינה הן אמורות ללדת. ע"פ הנהלים הקיימים, במידה וייכשלו במועד ב' הן יהיו זכאיות למועד נוסף, אך הוא עלול להיות בשנה שלאחר מכן.</p>
+                            <p>"אני אמורה ללדת בינואר, בדיוק בתחילת תקופת המבחנים. לארבעת המבחנים הראשונים לא אוכל לגשת. פניתי להנהלת המחלקה ולאוניברסיטה, כי אם אכשל במועד ב,' לא יכתבו מבחן נוסף עבורי ועבור חברות שנמצאות במצב דומה לשלי", סיפרה אחת הסטודנטיות שיזמו את המהלך, "צריך להיות נוהל אחיד לסטודנטיות שעומדות להפוך לאימהות בכל המוסדות בישראל, כפי שעשו את זה למען חיילי מילואים עם מועד בחינה מיוחד"</p>
+                        </div>
+                     <!--	<?php
+                            /**third article in the page- smallOne [2]*/
+                            echo '<h3 class="small-main-title">' .$article3["main_title3"] . '</h3>';
+                            echo '<p class="writer-and-photographer">'. $article3["articleWriter"] .'</p>';
+                            echo '<div class="small-content">'. $article3["articleSmall"] .'</div>';
+                        ?>-->
+                    </div>
+                    <div id="four-article" class="article-click-container" data-article-type="2"> <!--data-article="<?php echo $article1["id"]?>"-->
+                        <div class="title-and-writer-container ">
+                            <h3 class="small-main-title"><span class="red-class">> </span>כותרת כתבה קטנה תחום עניין 3 עד 50 תוים םםםםםםם םם</h3>
+                            <p class="small-writer">שם הכתב</p>
+                        </div>
+                        <div class="small-content">
+                            <p>קבוצת סטודנטיות מאוניברסיטת בר-אילן פנו להנהלת המוסד בבקשה לקבל מועד מיוחד לבחינות, מאחר ובתאריך הבחינה הן אמורות ללדת. ע"פ הנהלים הקיימים, במידה וייכשלו במועד ב' הן יהיו זכאיות למועד נוסף, אך הוא עלול להיות בשנה שלאחר מכן.</p>
+                            <p>"אני אמורה ללדת בינואר, בדיוק בתחילת תקופת המבחנים. לארבעת המבחנים הראשונים לא אוכל לגשת. פניתי להנהלת המחלקה ולאוניברסיטה, כי אם אכשל במועד ב,' לא יכתבו מבחן נוסף עבורי ועבור חברות שנמצאות במצב דומה לשלי", סיפרה אחת הסטודנטיות שיזמו את המהלך, "צריך להיות נוהל אחיד לסטודנטיות שעומדות להפוך לאימהות בכל המוסדות בישראל, כפי שעשו את זה למען חיילי מילואים עם מועד בחינה מיוחד"</p>
+                        </div>
+                        <!--	<?php
+                               /**third article in the page- smallOne [2]*/
+                               echo '<h3 class="small-main-title">' .$article3["main_title3"] . '</h3>';
+                               echo '<p class="writer-and-photographer">'. $article3["articleWriter"] .'</p>';
+                               echo '<div class="small-content">'. $article3["articleSmall"] .'</div>';
+                           ?>-->
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+		</main>
+		<button type="button"><a href="page10.html">לעמ' הבא </a> </button>
+	</body>
+</html>

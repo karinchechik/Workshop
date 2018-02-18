@@ -1,0 +1,320 @@
+.page1 {
+    border: 1px solid red;
+}
+.page1 .article-container .clear{
+    clear:both;
+}
+/*
+.page1 .first-article {
+    width: 100%;
+}
+*/
+
+/**weather***/
+.page1 .firstContainer {
+    text-align: right;
+    margin-bottom: 30px;
+}
+.page1 .firstContainer #weatherContainer{
+    float: left;
+    width: 490px;
+}
+.page1 .firstContainer #weatherContainer .city-weather-container.bottom-part{
+    margin-bottom: 0;
+}
+.page1 .firstContainer #weatherContainer .city-temp-container-api-weather {
+    float: left;
+    max-height: 47px;
+    line-height: 39px;
+}
+.page1 .firstContainer .city-img-container-api-weather {
+    float: right;
+}
+.page1 .firstContainer .city-icon-api-weather {
+    width: 46px;
+    height: 46px;
+}
+.page1 .firstContainer .city-name-api-weather {
+    font-size: 18px;
+    line-height: 14px;
+    color: #53C4F1;
+    text-align: right;
+    font-family: atlas;
+    font-weight: 500;
+}
+.page1 .firstContainer .city-temp-api-weather {
+    font-size: 30px;
+    color: #53C4F1;
+    text-align: right;
+    font-family: atlas;
+    font-weight: 500;
+}
+.page1 .firstContainer .logoImg{
+    height: 120px;
+}
+.page1 .firstContainer .city-weather-container {
+    float: left;
+    margin-bottom: 3px;
+}
+.page1 .firstContainer .with-space{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+/**********SecondContainer*************/
+.page1 .secondContainer{
+    height: 203px;
+    margin-bottom: 30px;
+}
+.page1 .secondContainer .article-container {
+    float: left;
+    width: 548px;
+    margin-top: 11px;
+    margin-left: 11px;
+    margin-right: 41px;
+    background-color: #FFFFFF;
+    display: block;
+    position: relative;
+}
+.page1 .secondContainer .article-container .article{
+    padding-right: 14px;
+    padding-left: 14px;
+    position: relative;
+    background-color: #FFFFFF;
+    z-index: 2;
+    border-radius: 3px;
+    height: 173px;
+}
+.page1 .secondContainer .article-container .article h2{
+    font-family:"atlas";
+    font-size: 33px;
+    margin-top: 0px;
+    padding-top: 5px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.page1 .secondContainer .article-container .article h3{
+    margin: 0;
+    text-align: center;
+    font-size: 21px;
+    font-family: opensans;
+    line-height: 27px;
+}
+.page1 .secondContainer .article-container .article .pageNumber{
+    color: #EE422F;
+    font-weight: 600;
+    font-family: atlas;
+    font-size: 22px;
+    line-height: 20px;
+    direction: rtl;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top:22px;
+}
+.page1 .secondContainer .article-container.yome-border:before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: -11px;
+    right: -11px;
+    bottom: -11px;
+    background-image: linear-gradient(to right, #EE422F 4.5%, #FFFFFF 4.5%, #FFFFFF 95.5%, #53C4F1 95.5%);
+    z-index: 0;
+    border-radius: 5px;
+}
+/****date****/
+.page1 .secondContainer .dateContainer{
+    float: right;
+    width: 211px;
+    height: 195px;
+    display: block;
+}
+.page1 .secondContainer .dateContainer #currDayHebrewName {
+    font-weight: 800;
+    font-family: atlas;
+    text-align: center;
+    border: 3px solid black;
+    font-size: 42px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #EE422F;
+    line-height: 46px;
+    margin-bottom: 13px;
+    padding-bottom: 5px;
+}
+.page1 .secondContainer .dateContainer #hebrewAndForeignContainer{
+    border: 3px solid black;
+    padding-bottom: 6px;
+    font-weight: 500;
+   /* height: 133px;*/
+    height: 125px;
+}
+.page1 .secondContainer .dateContainer #hebrewAndForeignContainer #hebrewMonthDateContainer{
+    float: right;
+    width: 21%;
+    font-size: 18px;
+    padding-right: 8px;
+    direction: rtl;
+}
+.page1 .secondContainer .dateContainer #foreignDate{
+    float:left;
+    width:24%;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 7px;
+}
+#hebrewDayDate, #day {
+    color: #53C4F1;
+    font-weight: bold;
+    font-size: 56px;
+    /*line-height: 56px;*/
+    line-height: 45px;
+    font-family:"atlas";
+}
+#year, #month,#hebrewMonthDate, #hebrewYearDate {
+    font-size: 32px;
+    line-height: 35px;
+    font-family:"atlas";
+}
+/********third container********/
+.page1 .thirdContainer .second-article {
+    height: 450px;
+    margin-bottom: 30px;
+    direction: rtl;
+}
+
+.page1 .thirdContainer .second-article .titles-container{
+    padding-top: 200px;
+}
+.page1 .thirdContainer .second-article .small-main-title{
+    font-family:"atlas";
+    background-color: #53C4F1;
+    font-size: 65px;
+    text-align: right;
+    color: #ffffff;
+    margin-right: 0px;
+    width: 371px;
+    text-shadow: 3px 1px 1px #000000;
+    font-weight: 800;
+    padding-right: 8px;
+    line-height: 58px;
+    padding-bottom: 6px;
+}
+.page1 .thirdContainer .second-article .small-sub-title{
+    color: #ffffff;
+    background-color: #4E4E4E;
+    width: 668px;
+    margin-right: 0px;
+    opacity: 0.9;
+    padding: 7px;
+    line-height: 30px;
+    font-size: 21px;
+    font-family: opensans-bold;
+}
+.page1 .thirdContainer .second-article .small-sub-title .blueClass{
+    font-family: opensans-bold;
+    background-color: #53C4F1;
+    color: #000000;
+    padding: 0 3px;
+    margin-right: 5px;
+    font-weight: 900;
+}
+.page1 .thirdContainer .second-article .photograpAndPageNumberContainer{
+    top: 77px;
+    position: relative;
+}
+.page1 .thirdContainer .second-article .pageNumber{
+    background-color:#53C4F1 ;
+    color: #000000;
+    margin-right: 7px;
+    font-family:"atlas";
+}
+/**********four-Container*************/
+.page1 .fourContainer{
+
+
+}
+.page1 .fourContainer .third-article{
+    float:left;
+    width: 57%;
+    height: 300px;
+    direction: rtl;
+}
+.page1 .fourContainer .third-article .small-main-title {
+    background-color: #EE422F;
+    font-family:"atlas";
+    color: #ffffff;
+    width: 232px;
+    margin-top: 25px;
+    margin-right: 0px;
+    padding-right: 7px;
+    font-size: 40px;
+    text-shadow: 3px 1px 1px #000000;
+    font-weight: 800;
+}
+.page1 .fourContainer .third-article .pageNumber{
+    color: #000000;
+    background-color: #EE422F;
+    margin-right: 0px;
+    display: inline;
+    font-size: 20px;
+    font-family: opensans-bold;
+}
+.page1 .fourContainer .forth-article-container{
+    float: right;
+    width: 310px;
+    margin-top: 10px;
+    position: relative;
+    display: block;
+    margin-right: 11px;
+    background-color: #FFFFFF;
+    direction: rtl;
+}
+.page1 .fourContainer .forth-article-container.yome-border:before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: -11px;
+    right: -11px;
+    bottom: -11px;
+    background-image: linear-gradient(to right, #EE422F 4.5%, #FFFFFF 4.5%, #FFFFFF 95.5%, #53C4F1 95.5%);
+    z-index: 0;
+    border-radius: 5px;
+}
+.page1 .fourContainer .forth-article-container .forth-article{
+    position: relative;
+    height: 280px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #FFFFFF;
+    z-index: 2;
+    border-radius: 3px;
+}
+.page1 .fourContainer .forth-article-container .forth-article h2{
+    font-family: "atlas";
+    font-size: 31px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+.page1 .fourContainer .forth-article-container .forth-article h3{
+    margin: 0px;
+}
+.page1 .fourContainer .forth-article-container .forth-article .pageNumber{
+    color: #EE422F;
+    text-align: center;
+    margin-top: 28px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-family: atlas;
+}
+.page1 .fourContainer .forth-article-container .forth-article .small-sub-title{
+    text-align: center;
+    font-size: 23px;
+    line-height: 30px;
+    font-family: opensans;
+    margin-top: 15px;
+}

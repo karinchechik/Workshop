@@ -1,0 +1,354 @@
+.page9 {
+    border: 0 solid red;
+    position: relative;
+}
+
+.page9 .clear{
+    clear: both;
+}
+
+.page9 .articles-container {
+   /* height: calc(100% - 55px);
+    position: relative;*/
+}
+/*************top-pane********************************/
+.page9 .top-pane {
+    margin-bottom:25px;
+}
+.page9 .top-pane .article-container .titles-and-img-container .title-container{
+    direction: rtl;
+    float: right;
+    width:66%;
+}
+
+.page9 .top-pane .article-container .titles-and-img-container .title-container h2{
+    background-color: #53C4F1;
+    display: inline-block;
+    font-family: "atlas";
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 31px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 4px;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+.page9 .top-pane .article-container .titles-and-img-container .title-container h4{
+    color: #53C4F1;
+    font-size: 21.5px;
+    font-family: opensans;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.page9 .top-pane .article-container .titles-and-img-container .title-container span {
+    font-size: 17px;
+    line-height: 17px;
+    font-family: "opensans-bold";
+    color: #4E4E4E;
+    text-align: left;
+    margin-top: 26px;
+}
+.page9 .top-pane .article-container .image-container{
+    width:31%;
+}
+.page9 .top-pane .article-container .image-container img{
+    width:100%;
+}
+.page9 .top-pane .article-container .content-container{
+    margin-top: 10px;
+}
+.page9 .top-pane .article-container .content-container .content{
+    font-family: "opensans";
+    text-align: justify;
+    direction: rtl;
+    font-size: 14px;
+    color: #000000;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+}
+
+.page9 .top-pane .content-container p:first-child {
+    text-indent: 0;
+}
+.page9 .top-pane .content-container p {
+    margin: 0;
+    text-indent: 15px;
+}
+/***********bottom-pane***********/
+
+.page9 .bottom-pane {
+    position: absolute;
+    bottom: 0;
+}
+.page9 .bottom-pane .second-article-container, .page9 .bottom-pane .third-article-container, .page9 .bottom-pane .four-article-container{
+    float: left;
+    width: 250px;
+    height: 525px;
+    border: #4E4E4E 3px solid;
+    direction: rtl;
+    margin-right: 30px;
+}
+.page9 .bottom-pane .four-article-container{
+    margin-right: 0px;
+    margin-left: 1px;
+}
+.page9 .bottom-pane .title-and-writer-container{
+    background-color:#4E4E4E ;
+    padding-bottom: 5px;
+}
+.page9 .bottom-pane .title-and-writer-container h2{
+    background-color: #4E4E4E;
+    font-size: 31px;
+    font-family: "atlas";
+    color: #FFFFFF;
+    margin-top: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 5px;
+    line-height: 30px;
+}
+.page9 .bottom-pane .title-and-writer-container span{
+    color:#EE422F;
+    font-family: "opensans-bold";
+    font-size: 17px;
+    line-height: 17px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    padding-right: 8px;
+}
+.page9 .bottom-pane .title-and-writer-container .red-class{
+    color: #EE422F;
+    font-weight: 700;
+    font-family: "atlas";
+    font-size: 30px;
+}
+.page9 .bottom-pane .content-container{
+    margin: 7px;
+    text-align: justify;
+    font-family: "opensans";
+    direction: rtl;
+    font-size: 14px;
+    color: #000000;
+}
+.page9 .bottom-pane .content-container p:first-child {
+    text-indent: 0;
+}
+.page9 .bottom-pane .content-container p {
+    margin: 0;
+    text-indent: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page5 .yome-border-container .top-pane-articles-container {
+    padding: 1% 1%;
+    position: relative;
+    background-color: #FFFFFF;
+    z-index: 2;
+    border-radius: 2px;
+    height: 100%;
+}
+.page5 .top-pane .article-container .titles-and-img-container {
+    background-color:#53C4F1 ;
+    border-radius: 15px;
+    width: 100%;
+    height: 298px;
+}
+.page5 .top-pane .article-container .titles-and-img-container .title-container{
+    float: right;
+    width:43%;
+}
+.page5 .top-pane .article-container .titles-and-img-container .title-container h2{
+    text-align: center;
+    font-size: 43px;
+    font-family: "atlas";
+    font-weight: 700;
+    margin-top: 1px;
+    line-height: 40px;
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page5 .top-pane .article-container .titles-and-img-container .title-container h4{
+    color: #000000;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 23px;
+    direction: rtl;
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 28px;
+}
+.page5 .top-pane .article-container .titles-and-img-container .image-container{
+    float: left;
+    width:57%;
+    height: 222px;
+    border-radius: 15px;
+}
+.page5 .top-pane .article-container .titles-and-img-container .image-container img{
+    width:100%;
+}
+.page5 .top-pane .article-container .writer-and-photographer-container{
+    margin-top: 12px;
+    direction: rtl;
+    margin-right: 16px;
+    margin-bottom: 15px;
+}
+.page5 .top-pane .article-container .writer-and-photographer-container span{
+    font-size: 17px;
+    line-height: 17px;
+    font-family: "opensans-bold";
+    color: #4E4E4E;
+    text-align: left;
+    margin-top: 26px;
+}
+.page5 .top-pane .article-container .content-container{
+    margin-right: 11px;
+    margin-left: 11px;
+}
+.page5 .top-pane .article-container .content-container .content{
+    font-family: "opensans";
+    text-align: justify;
+    direction: rtl;
+    font-size: 14px;
+    color: #000000;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 34px;
+    -moz-column-gap: 34px;
+    column-gap: 34px;
+    height: 362px;
+}
+
+.page5 .top-pane .article-container .content-container p {
+    margin: 0;
+    text-indent: 15px;
+}
+
+
+
+/*************bottom-pane********************************/
+.page5 .bottom-pane{
+    width: calc(100% - 22px);
+    margin-left: 11px;
+}
+.page5 .bottom-pane .second-article-container{
+     float: right;
+     width: 47.2%;
+     margin-right: 11px;
+     border: #4E4E4E 3px solid;
+    direction: rtl;
+ }
+.page5 .bottom-pane .title-and-writer-container{
+    background-color:#4E4E4E ;
+    padding-bottom: 7px;
+}
+.page5 .bottom-pane .title-and-writer-container h2{
+    background-color:#4E4E4E;
+    color:#FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 7px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: "atlas";
+    font-size: 25px;
+}
+.page5 .bottom-pane .title-and-writer-container .writer{
+    color:#53C4F1;
+    margin-top: 0px;
+    font-family: "opensans-bold";
+    font-size: 17px;
+    line-height: 17px;
+}
+.page5 .bottom-pane .content-container{
+    font-family: opensans;
+    font-size: 13.3px;
+    padding: 3px 0 6px;
+}
+.page5 .bottom-pane .content-container div{
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: justify;
+    margin-bottom: 1px;
+}
+.page5 .bottom-pane .content-container div p{
+    text-indent: 15px;
+    margin-bottom: 0px;
+}
+.page5 .bottom-pane .content-container div p:first-child{
+    text-indent: 0px;
+    margin-bottom: 0px;
+}
+/****/
+.page5 .bottom-pane .third-article-container{
+    float: left;
+    width: 47.2%;
+    margin-left: 11px;
+    border: #4E4E4E 3px solid;
+    direction: rtl;
+}
+/*.page5 .bottom-pane .third-article-container .title-and-writer-container {
+    background-color: #4E4E4E;
+}
+.page5 .bottom-pane .third-article-container .title-and-writer-container h2{
+    background-color:#4E4E4E;
+    color:#FFFFFF;
+    margin-top: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 1px;
+    font-family: "atlas";
+    font-size: 17px;
+    line-height: 17px;
+}
+.page5 .bottom-pane .third-article-container .title-and-writer-container span {
+    color:#53C4F1;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    font-family: "opensans-bold";
+}
+.page5 .bottom-pane .third-article-container .content-container{
+    font-family: "opensans";
+    font-size: 14px;
+}
+.page5 .bottom-pane .third-article-container .content-container div{
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: justify;
+    margin-bottom: 1px;
+}
+.page5 .bottom-pane .third-article-container .content-container div p{
+    text-indent: 15px;
+    margin-bottom: 0px;
+}
+.page5 .bottom-pane .third-article-container .content-container div p:first-child{
+    text-indent: 0px;
+    margin-bottom: 0px;
+}*/
+.blue-class{
+    color:#53C4F1;
+    font-weight: 700;
+    font-family: "atlas";
+}

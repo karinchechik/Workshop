@@ -1,0 +1,61 @@
+.page1 {
+    border: 1px solid red;
+}
+.page1 .article-container .clear{
+    clear:both;
+}
+/*
+.page1 .first-article {
+    width: 100%;
+}
+*/
+/************first Container***************************/
+#firstContainer {
+    margin-bottom: 3.5%;
+}
+/**weather***/
+#weatherContainer{
+    float: left;
+    width:50%;
+    margin-right: 1.5%;
+    height: 164px;
+}
+.city-temp-container-api-weather {
+    float: left;
+    max-height: 47px;
+    line-height: 39px;
+}
+.city-img-container-api-weather {
+    float: right;
+}
+.city-icon-api-weather {
+    width: 40px;
+    height: 40px;
+}
+.city-name-api-weather {
+    font-size: 18px;
+    color: #53C4F1;
+    text-align: right;
+    font-family: atlas;
+    font-weight: 500;
+}
+.city-temp-api-weather {
+    font-size: 39px;
+    color: #53C4F1;
+    text-align: right;
+    font-family: atlas;
+    font-weight: 500;
+}
+#logoImg{
+    float: right;
+    margin-right: 1.5%;
+    height: 164px;
+}
+.city-weather-container {
+    float: right;
+    margin-bottom: 24px;
+}
+.with-space{
+    margin-right: 20%;
+    margin-left: 20%;
+}

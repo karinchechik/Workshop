@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>yome</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="../includes/ckeditor/ckeditor.js"></script>
+		<script src="../includes/js/pages/admin/fileImg.js"></script>
+		<link rel="shortcut icon" href="../includes/images/logoYome.png"/>
+		<link rel="stylesheet" type="text/css" href="../includes/style/admin/style.css">
+	</head>
+	<body>
+		<header>
+		</header>
+		<main>
+			<img class="slogo" src="../includes/images/yome-menu-slogo.png">
+			<h1 class="main-con-title"><span class="end-sign">[</span> העלאת פרסומת <span class="start-sign">]</span></h1>			
+			<form id="content-form" action="commercialPosted.php" method="post" autocomplete="on" enctype="multipart/form-data">
+				<br><h2 class="mainTitle">פרסומת גדולה</h2>
+				<label class="con-title">העלאת קובץ </label><br>
+		            <div class="input-group image-preview">
+		                <input id="input-style" type="text" class="form-control image-preview-filename" disabled="disabled" name="image1">
+		                <span class="input-group-btn">
+		                    <!-- image-preview-clear button -->
+		                    <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
+		                        <span class="glyphicon glyphicon-remove"></span> Clear
+		                    </button>
+		                    <!-- image-preview-input -->
+		                    <div id="button-style" class="btn btn-default image-preview-input">
+		                        <span class="glyphicon glyphicon-folder-open"></span>
+		                        <span class="image-preview-input-title">Browse</span>
+		                        <input type="file" accept="image/png, image/jpeg, image/gif" name="image1"/>
+		                    </div>
+		                </span>
+		            </div>
+				<br><br><h2 class="mainTitle">פרסומת בינונית</h2>
+				<label class="con-title">העלאת קובץ </label><br>
+		            <div class="input-group image-preview2">
+		                <input id="input-style2" type="text" class="form-control image-preview2-filename" disabled="disabled" name="image2">
+		                <span class="input-group-btn">
+		                    <!-- image-preview-clear button -->
+		                    <button type="button" class="btn btn-default image-preview2-clear" style="display:none;">
+		                        <span class="glyphicon glyphicon-remove"></span> Clear
+		                    </button>
+		                    <!-- image-preview-input -->
+		                    <div id="button-style2" class="btn btn-default image-preview2-input">
+		                        <span class="glyphicon glyphicon-folder-open"></span>
+		                        <span class="image-preview2-input-title">Browse</span>
+		                        <input type="file" accept="image/png, image/jpeg, image/gif" name="image2"/>
+		                    </div>
+		                </span>
+		            </div>
+				<br><br><h2 class="mainTitle">פרסומת קטנה</h2>
+				<label class="con-title">העלאת קובץ </label><br>
+		            <div class="input-group image-preview3">
+		                <input id="input-style3" type="text" class="form-control image-preview3-filename" disabled="disabled" name="image3">
+		                <span class="input-group-btn">
+		                    <!-- image-preview-clear button -->
+		                    <button type="button" class="btn btn-default image-preview3-clear" style="display:none;">
+		                        <span class="glyphicon glyphicon-remove"></span> Clear
+		                    </button>
+		                    <!-- image-preview-input -->
+		                    <div id="button-style3" class="btn btn-default image-preview3-input">
+		                        <span class="glyphicon glyphicon-folder-open"></span>
+		                        <span class="image-preview3-input-title">Browse</span>
+		                        <input type="file" accept="image/png, image/jpeg, image/gif" name="image3"/>
+		                    </div>
+		                </span>
+		            </div>
+		            <br><br><h3 class="tag-title">תגיות </h3>
+					<label class="checkbox1">&nbsp; ביטחון <input type="checkbox" name="tags[]" value="bitahon"></label><br>
+					<label class="checkbox1">&nbsp; ידיעות מהעולם <input type="checkbox" name="tags[]" value="yediot"></label><br>
+					<label class="checkbox1">&nbsp; משפט ופלילים <input type="checkbox" name="tags[]" value="mishpatAndPlilim"></label><br>
+					<label class="checkbox1">&nbsp; כלכלה וצרכנות <input type="checkbox" name="tags[]" value="calcala"></label><br>
+					<label class="checkbox1">&nbsp; פוליטיקה <input type="checkbox" name="tags[]" value="politics"></label><br>
+					<label class="checkbox1">&nbsp; חינוך וחברה <input type="checkbox" name="tags[]" value="hinoh"></label><br>
+					<label class="checkbox1">&nbsp; ספורט <input type="checkbox" name="tags[]" value="sport"></label><br>
+					<label class="checkbox1">&nbsp; טלויזיה ובידור <input type="checkbox" name="tags[]" value="televistion"></label><br>
+					<label class="checkbox1">&nbsp; אומנות ותרבות <input type="checkbox" name="tags[]" value="omanot"></label><br>
+					<label class="checkbox1">&nbsp; מדע וטכנולוגיה <input type="checkbox" name="tags[]" value="madaAndTec"></label><br>
+					<label class="checkbox1">&nbsp; מוזיקה <input type="checkbox" name="tags[]" value="music"></label><br>
+					<label class="checkbox1">&nbsp; בריאות וטבע <input type="checkbox" name="tags[]" value="briot"></label><br>
+					<label class="checkbox1">&nbsp; תחבורה <input type="checkbox" name="tags[]" value="tahbora"></label><br>
+					<label class="checkbox1">&nbsp; דת <input type="checkbox" name="tags[]" value="dat"></label><br>
+					<label class="checkbox1">&nbsp; אופנה <input type="checkbox" name="tags[]" value="ofna"></label><br>
+					<label class="checkbox1">&nbsp; תיירות <input type="checkbox" name="tags[]" value="taiarot"></label><br>
+
+				<br><input class="btn btn-default btn-lg sub-button" type="submit" value=" שלח ">
+			</form>
+		</main>
+	</body>
+</html>

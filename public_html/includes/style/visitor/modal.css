@@ -1,0 +1,41 @@
+/*********modal*************/
+#myModal, #userDetailsModal,#loadUserPreviousSettings{
+	z-index: 2000;
+	direction: rtl;
+}
+#myModalLabel, #userDetailsModalLabel, #loadUserPreviousSettingsLabel {
+   
+    margin: 0;
+    font-family: "atlas";
+    font-size: 20px;
+    font-weight:bold;    
+}
+.close span{
+	position: absolute;
+    left: 0;
+    margin-left: 13px;
+}
+
+#closeButton, #saveUsersDetailsButton{
+	float:left;
+	margin-left: 25px;
+    font-size: 16px;
+}
+
+/***userDetailsModal***/
+
+.user-details-modal-lable {
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+    margin-right: -16px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+#idNumberInput,#phoneNumberInput {
+	margin-right: 56px;	
+}
+#userNameInput {
+    margin-right: 20px;
+}
+

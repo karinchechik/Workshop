@@ -1,0 +1,87 @@
+.page7 {
+    border: 0 solid red;
+    position: relative;
+}
+
+.page7 .first-article {
+    width: 100%;
+}
+
+.page7 .content-container {
+    width: 100%;
+    direction: rtl;
+    text-align: right;
+}
+
+.page7 .content {
+    width: 100%;
+    font-family: "opensans";
+    font-size: 13.5px;
+    color: #000000;
+    text-align: justify;
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 30px;
+}
+
+.page7 .content h1 {
+    text-align: right;
+    font-family: "atlas";
+    font-size: 60px;
+    line-height: 70px;
+    color: #000000;
+    font-weight: 800;
+    margin: 0;
+}
+.page7 .content h1 span {
+    border-bottom: 10px solid #EE422F;
+    top: -18px;
+    position: relative;
+}
+
+.page7 .content h3 {
+    font-family: "opensans-bold";
+    font-size: 18px;
+    line-height: inherit;
+    color: #EE422F;
+    margin: 0px 0 5px;
+}
+
+.page7 .content .writer-container {
+    direction: rtl;
+    text-align: right;
+    font-size: 17px;
+    line-height: 15px;
+    font-family: "opensans-bold";
+    color: #4E4E4E;
+    margin: 15px 0;
+}
+
+
+
+.page7 .content .article-content p {
+    margin: 0;
+    text-indent: 15px;
+}
+
+.page7 .content .article-content  p:first-child {
+    text-indent: 0;
+}
+
+.page7 .image-container {
+    margin-top: 15px;
+    width: 100%;
+    direction: rtl;
+    position: absolute;
+    bottom: 0;
+}
+
+.page7 .image-container img {
+    width: 100%;
+}
+
+
+
