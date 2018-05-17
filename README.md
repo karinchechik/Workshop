@@ -12,16 +12,23 @@ Students could also sign in by swiping their student card in a card reader that 
 The content was added by an author, and we created a CMS for the convenience.
 
 # Entry Page
+![Entry Page](start2.png)
 
+# Ranking
+![Ranking Page](rank.png)
 
 # Newspaper Example
+![First Page](newspaperfirst.png)
+![Any Page](newspaper.png)
 
-
+# CMS Example - Admin Menu
+![Admin Menu](adminmenu.png)
 
 # CMS Example - Add a new article
+![New Article](admin2.png)
 
+# Architecture
+![Architecture](architecture.png)
 
-
-# CMS Example - Add a new commercial
 
 
